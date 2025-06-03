@@ -7,8 +7,8 @@ import Navbar from '@/components/Navbar';
 import {NextIntlClientProvider} from "next-intl";
 
 export const metadata: Metadata = {
-    title: 'Adrián y Ana',
-    description: 'Bienvenidos a la boda del año, a la boda de Adrián y Ana',
+    title: 'Lili y Max',
+    description: 'Bienvenidos a la boda del año, a la boda de Lili y Max',
 };
 
 interface RootLayoutProps {

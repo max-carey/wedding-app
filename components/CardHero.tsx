@@ -25,7 +25,7 @@ const CardHero = () => {
                 <p className="subtitle text-accent uppercase">{t('hero')}</p>
                 <h1
                     style={marcellus.style}
-                    className="heading-hero font-medium uppercase text-6xl">Adrián & Ana</h1>
+                    className="heading-hero font-medium uppercase text-6xl">Lili & Max</h1>
                 <Image
                     src={divider}
                     alt="Subtitle"

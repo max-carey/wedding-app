@@ -16,6 +16,7 @@ import GuestFormFormikEs from "@/components/GuestFormFormikEs";
 import React from "react";
 import SectionsContent from "@/components/SectionsContent";
 import TestingTranslations from "@/components/TestingTranslations";
+import ItinerarySection from "@/components/ItinerarySection";
 
 export default function Home() {
     const t = useTranslations('IndexPage');
@@ -102,6 +103,8 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+            <ItinerarySection />
 
             <section id="localitations" className="flex-col justify-center items-center flex pb-[76px] px-5">
                 <div className="container-wide w-full max-w-[1200px] flex-col items-center flex;">

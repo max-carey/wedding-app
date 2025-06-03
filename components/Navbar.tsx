@@ -70,6 +70,11 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li>
+                            <a href="#itinerary" className="block py-2 px-3" onClick={closeMenu}>
+                            {t('sections.Itinerary')} 
+                            </a>
+                        </li>
+                        <li>
                             <a href="#gallery" className="block py-2 px-3" onClick={closeMenu}>
                             {t('sections.Gallery')}  
                             </a>

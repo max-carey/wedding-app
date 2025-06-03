@@ -8,22 +8,22 @@ const containerStyle = {
   height: '750px'
 };
 
-const origin: [number, number] = [37.437041393899676, -4.191635586788259];
-const destination: [number, number] = [37.440575591901045, -4.231433159434073];
+// Wedding location coordinates in Mexico City
+const position: [number, number] = [19.42809936877832, -99.16142492012331];
 
-const OpenStreetMapRouteComponent: React.FC = () => {
+const OpenStreetMapComponent: React.FC = () => {
   const mapRef = useRef<HTMLDivElement>(null);
   const leafletMapRef = useRef<L.Map | null>(null);
 
   useEffect(() => {
     if (mapRef.current && !leafletMapRef.current) {
-      leafletMapRef.current = L.map(mapRef.current).setView(origin, 13);
+      leafletMapRef.current = L.map(mapRef.current).setView(position, 15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenStreetMap contributors'
       }).addTo(leafletMapRef.current);
-      L.marker(origin).addTo(leafletMapRef.current).bindPopup('Origen').openPopup();
-      L.marker(destination).addTo(leafletMapRef.current).bindPopup('Destino');
-      L.polyline([origin, destination], { color: 'blue' }).addTo(leafletMapRef.current);
+      L.marker(position).addTo(leafletMapRef.current)
+        .bindPopup('Wedding Venue: Calle Gral. Prim 32, Col. Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX')
+        .openPopup();
     }
     return () => {
       if (leafletMapRef.current) {
@@ -38,4 +38,4 @@ const OpenStreetMapRouteComponent: React.FC = () => {
   );
 };
 
-export default OpenStreetMapRouteComponent;
+export default OpenStreetMapComponent; 

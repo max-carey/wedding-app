@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
-import GoogleMapComponent from './GoogleMap';
-import GoogleMapRouteComponent from './GoogleMapRoute';
+import OpenStreetMapComponent from './OpenStreetMap';
+import OpenStreetMapRouteComponent from './GoogleMapRoute';
 import Image from 'next/image';
 import { useLocale, useTranslations } from "next-intl";
 
@@ -18,22 +18,22 @@ const MapTabs: React.FC = () => {
       case 'wedding':
         return (
           <div className="tab-content flex flex-col md:flex-row justify-center items-center">
-            <div className="map-container w-[400px] h-[400px]">
-              <GoogleMapComponent />
+            <div className="map-container w-[500px] h-[750px]">
+              <OpenStreetMapComponent />
             </div>
-            <div className="image-container ml-0 mt-5 md:mt-0 md:ml-5 w-[400px] h-[400px]">
-              <Image src="/iglesia.jpg" alt="Iglesia" width={400} height={400} className="object-cover" />
+            <div className="image-container ml-0 mt-5 md:mt-0 md:ml-5 w-[500px] h-[750px]">
+              <Image src="/venue.jpg" alt="Iglesia" width={500} height={750} className="object-cover" />
             </div>
           </div>
         );
       case 'party':
         return (
           <div className="tab-content flex flex-col md:flex-row justify-center items-center">
-            <div className="map-container w-[400px] h-[400px]">
-              <GoogleMapRouteComponent />
+            <div className="map-container w-[500px] h-[750px]">
+              <OpenStreetMapRouteComponent />
             </div>
-            <div className="image-container ml-0 mt-5 md:mt-0 md:ml-5 w-[400px] h-[400px]">
-              <Image src="/genilla.jpg" alt="Genilla" width={400} height={400} className="object-cover" />
+            <div className="image-container ml-0 mt-5 md:mt-0 md:ml-5 w-[500px] h-[750px]">
+              <Image src="/genilla.jpg" alt="Genilla" width={500} height={750} className="object-cover" />
             </div>
           </div>
         );
