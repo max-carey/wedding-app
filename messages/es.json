@@ -125,6 +125,15 @@
       "description": "Este es un ejemplo de cómo se puede gestionar contenido multilingüe en Next.js utilizando next-intl. Puedes cambiar el idioma en la barra de navegación."
     }
   },
+  "PasswordPage": {
+    "title": "Bienvenido a Nuestra Página de Boda",
+    "description": "Por favor, introduce la contraseña para acceder a los detalles de nuestra boda",
+    "passwordLabel": "Contraseña",
+    "passwordPlaceholder": "Introduce la contraseña",
+    "submitButton": "Entrar al Sitio",
+    "loadingButton": "Entrando...",
+    "errorMessage": "Contraseña incorrecta. Por favor, inténtalo de nuevo."
+  },
   "NotFoundPage": {
     "title": "Page Not Found",
     "description": "Oops! It seems like you've stumbled upon a page that doesn't exist. Don't worry, our internationalization magic is still hard at work on other parts of the app. Feel free to navigate back to explore more!"
