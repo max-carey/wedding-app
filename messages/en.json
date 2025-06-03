@@ -14,7 +14,7 @@
       "locationsText": "Where will the magic happen?",
       "locationsText1": "We therefore have the pleasure to invite you to our wedding ceremony.",
       "locations1": "Choose the perfect venue that captures the essence of your love story.",
-      "grettingText": "There are days in life that are special on their own. Sharing them with the people you love makes them unforgettable.",
+      "grettingText": "Please join us in Mexico City for our wedding!",
       "gallery": "Our History in Pictures",
       "galleryText": "Each photo tells a part of our story, from the simplest moments to the most extraordinary. We feel fortunate to have shared so many memories together and are excited to create many more in the future.",
       "subtitle": "Confirm Your Assistance",
@@ -28,7 +28,10 @@
       "Locations": "Locations",
       "RSVP": "RSVP",
       "Wedding": "Wedding Event",
-      "Party": "Party Event"
+      "Party": "Party Event",
+      "Accommodations": "Accommodations",
+      "accommodationsText": "The wedding venue is located in downtown Mexico City (el centro). We recommend staying in Polanco, Reforma, Roma, or Condesa neighborhoods. Here are some hotel recommendations for each area:",
+      "accommodationsHelp": "Feel free to reach out to us if you need help with accommodations or have any questions!"
     },
     "form": {
       "warning": "We hope to see you at our wedding. You will receive an email with the wedding details, please check the",

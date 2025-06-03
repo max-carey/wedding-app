@@ -24,7 +24,10 @@
       "Locations": "Ubicaciones",
       "RSVP": "RSVP",
       "Wedding": "Boda",
-      "Party": "Fiesta"
+      "Party": "Fiesta",
+      "Accommodations": "Alojamiento",
+      "accommodationsText": "El lugar de la boda está ubicado en el centro de la Ciudad de México (el centro). Recomendamos hospedarse en los barrios de Polanco, Reforma, Roma o Condesa. Aquí hay algunas recomendaciones de hoteles para cada área:",
+      "accommodationsHelp": "¡No dudes en contactarnos si necesitas ayuda con el alojamiento o tienes alguna pregunta!"
     },
     "form": {
       "warning": "Esperamos verte en nuestra boda. Recibirás un correo electrónico con los detalles de la boda, por favor revisa el",
@@ -147,5 +150,4 @@
     "sectionTitle": "Sobre Nosotros",
     "description": "Una joven prieguense y un sayagués,\ncruzaron sus caminos en un destino lejano.\nLo que empezó como amistad sincera,\nse transformó en amor, una pasión verdadera.\n\nPara crecer juntos, un sueño abrazaron,\ny hacia Irlanda juntos marcharon.\nComo guiris en Mallorca, bajo estrellas en calma,\nen Cala Mendia eligieron compartir su amor para el resto de sus vidas."
   }
-  
 }

@@ -1,9 +1,9 @@
 import { marcellus } from "@/styles/fonts";
 import Image from "next/image";
 import Gretting from '@/components/Gretting';
-import img5 from '@/public/images/img5.jpg';
-import img9 from '@/public/images/img9.jpg';
-import img10 from '@/public/images/img10.jpg';
+import teotihuacan from '@/public/images/teotihuacan.jpg';
+import engagement_party from '@/public/images/engagement_party.jpg';
+import michoacan from '@/public/images/michoacan.jpg';
 import CardHero from "@/components/CardHero";
 import rama from '@/public/branch-r.svg';
 import PostcardBlockRight from "@/components/PostcardBlockRight";
@@ -17,6 +17,7 @@ import React from "react";
 import SectionsContent from "@/components/SectionsContent";
 import TestingTranslations from "@/components/TestingTranslations";
 import ItinerarySection from "@/components/ItinerarySection";
+import AccommodationsSection from "@/components/AccommodationsSection";
 
 export default function Home() {
     const t = useTranslations('IndexPage');
@@ -32,21 +33,21 @@ export default function Home() {
                                 <Image
                                     priority
                                     className="w-full object-cover h-[70vw] md:h-80vh min-h-auto md:min-h-[600px]"
-                                    src={img9}
+                                    src={michoacan}
                                     alt="Hero 1" />
                             </div>
                             <div className="hero-gallery-item w-full overflow-hidden relative">
                                 <Image
                                     priority
                                     className="w-full object-cover h-[70vw] md:h-80vh min-h-auto md:min-h-[600px]"
-                                    src={img5}
+                                    src={teotihuacan}
                                     alt="Hero 2" />
                             </div>
                             <div className="hero-gallery-item w-full overflow-hidden relative">
                                 <Image
                                     priority
                                     className="w-full object-cover h-[70vw] md:h-80vh min-h-auto md:min-h-[600px]"
-                                    src={img10}
+                                    src={engagement_party}
                                     alt="Hero 3" />
                             </div>
                         </div>
@@ -166,7 +167,9 @@ export default function Home() {
                 </div>
             </section>
 
-            <section id="guestFormFormik" className="container flex-col justify-center items-center flex pb-[76px] px-5">
+            <AccommodationsSection />
+
+            <section id="guestFormFormik" className="container-full section-styles">
                 <div className="content-section flex flex-col items-center justify-start gap-8">
                     <SectionsContent image={rama}
                                      subtitle={t('sections.subtitle')}
