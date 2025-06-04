@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-  "jsx": "preserve",
+    "jsx": "preserve",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/GuestForm.tsx", "components/GoogleMapRoute.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/GuestForm.tsx", "components/GoogleMapRoute.tsx", "types/**/*.d.ts"],
   "exclude": ["node_modules"]
 }
