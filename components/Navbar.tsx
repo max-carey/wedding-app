@@ -90,6 +90,11 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li>
+                            <a href="#dress-code" className="block py-2 px-3 text-[#2E5A27] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu}>
+                            {t('sections.DressCode')}  
+                            </a>
+                        </li>
+                        <li>
                             <a href="#guestFormFormik" className="block py-2 px-3 text-[#2E5A27] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu}>
                             {t('sections.RSVP')}   
                             </a>

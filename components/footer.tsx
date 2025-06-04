@@ -16,13 +16,6 @@ export default function Footer() {
                     width={70}
                     height={70}
                 />
-                <p>
-                    Made with <span>❤️</span> by
-                </p>
-                <p>
-                Adrián Bailador & Victor Alvarado
-                </p>
-                <p>{t('copyright')}</p>
             </div>
         </div>
     </footer>

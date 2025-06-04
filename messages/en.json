@@ -30,6 +30,9 @@
       "Wedding": "Wedding Event",
       "Party": "Party Event",
       "Accommodations": "Accommodations",
+      "DressCode": "Dress Code",
+      "dressCodeTitle": "Semi-Formal Attire",
+      "dressCodeDescription": "We kindly request our guests to dress in semi-formal attire. For gentlemen, this means suits (no tuxedos required). For ladies, cocktail dresses or elegant separates are perfect. We want everyone to feel comfortable while looking their best for our special day.",
       "accommodationsText": "The wedding venue is located in downtown Mexico City (el centro). We recommend staying in Polanco, Reforma, Roma, or Condesa neighborhoods. Here are some hotel recommendations for each area:",
       "accommodationsHelp": "Feel free to reach out to us if you need help with accommodations or have any questions!"
     },
@@ -143,11 +146,12 @@
     "description": "¡Uy! Parece que te has topado con una página que no existe. No te preocupes, nuestra magia de internacionalización sigue trabajando duro en otras partes de la aplicación. Siéntete libre de navegar de vuelta para explorar más"
   },
   "Navigation": {
-    "home": "Inicio",
+    "home": "Home",
     "wedding": "Wedding",
     "greeting": "Greeting",
     "aboutUs": "About Us",
-    "gallery": "Gallery"
+    "gallery": "Gallery",
+    "dressCode": "Dress Code"
   },
   "Footer": {
     "copyright": "© 2024 Tu App. Todos los derechos reservados"

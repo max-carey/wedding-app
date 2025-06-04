@@ -16,6 +16,12 @@ export const navigation = [
         onlyMobile: false,
     },
     {
+        id: "6",
+        title: "Dress Code",
+        url: "/#dress-code",
+        onlyMobile: false,
+    },
+    {
         id: "4",
         title: "Gallery",
         url: "/gallery",
