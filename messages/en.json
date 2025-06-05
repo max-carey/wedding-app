@@ -85,8 +85,8 @@
           "placeholder": "Enter the number of children"
         },
         "guestsChildrenNamesInput": {
-          "label": "Children Names",
-          "placeholder": "Enter the names of your children"
+          "label": "Number of Children",
+          "placeholder": "Enter how many children you will bring"
         }
       },
       "AllergiesSection": {

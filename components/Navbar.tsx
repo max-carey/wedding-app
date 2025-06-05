@@ -19,8 +19,8 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="flex-no-wrap fixed top-0 z-50 flex w-full items-center justify-between bg-[#F7FAF7] py-2 shadow-md shadow-black/5 dark:bg-[#1A2E1A] dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-4 backdrop-blur-sm bg-opacity-90">
-            <div className="md:container-full container flex flex-wrap items-center justify-between w-full">
+        <nav className="flex-no-wrap fixed top-0 z-50 flex w-full items-center justify-between bg-[#F7FAF7] py-2 shadow-md shadow-black/5 dark:bg-[#1A2E1A] dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-4 backdrop-blur-sm">
+            <div className="mx-6 flex flex-wrap items-center justify-between w-full">
                 <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <span
                         className="self-center text-2xl font-semibold whitespace-nowrap text-[#2E5A27]"

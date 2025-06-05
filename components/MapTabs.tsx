@@ -18,10 +18,10 @@ const MapTabs: React.FC = () => {
       case 'wedding':
         return (
           <div className="tab-content flex flex-col md:flex-row justify-center items-center">
-            <div className="map-container w-[500px] h-[750px]">
+            <div className="map-container w-[350px] md:w-[500px] h-[400px] md:h-[750px]">
               <OpenStreetMapComponent />
             </div>
-            <div className="image-container ml-0 mt-5 md:mt-0 md:ml-5 w-[500px] h-[750px]">
+            <div className="image-container ml-0 mt-5 md:mt-0 md:ml-5 w-[350px] md:w-[500px] h-[400px] md:h-[750px]">
               <Image src="/venue.jpg" alt="Iglesia" width={500} height={750} className="object-cover" />
             </div>
           </div>
@@ -29,10 +29,10 @@ const MapTabs: React.FC = () => {
       case 'party':
         return (
           <div className="tab-content flex flex-col md:flex-row justify-center items-center">
-            <div className="map-container w-[500px] h-[750px]">
+            <div className="map-container w-[350px] md:w-[500px] h-[400px] md:h-[750px]">
               <OpenStreetMapFridayComponent />
             </div>
-            <div className="image-container ml-0 mt-5 md:mt-0 md:ml-5 w-[500px] h-[750px]">
+            <div className="image-container ml-0 mt-5 md:mt-0 md:ml-5 w-[350px] md:w-[500px] h-[400px] md:h-[750px]">
               <Image src="/venue.jpg" alt="Genilla" width={500} height={750} className="object-cover" />
             </div>
           </div>

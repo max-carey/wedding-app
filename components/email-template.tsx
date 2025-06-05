@@ -13,16 +13,16 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     email
 }) => {
     const event = {
-        title: "Boda de Adrian y Ana, 12 de Octubre del 2024",
-        description: "Boda de Adrian y Ana, 12 de Octubre del 2024",
+        title: "Boda de Lili y Max, 14 de febrero del 2026",
+        description: "Boda de Lili y Max, 14 de febrero del 2026",
         locationCeremonia: "Iglesia de San Francisco a las 12.00h, Priego de Córdoba",
         locationCeremoniaEN: "San Francisco Church at 12:00 PM, Priego de Córdoba",
         locationBanquete: "Finca Genilla, Priego de Córdoba",
-        startTime: "2024-10-12T12:00:00",
-        endTime: "2024-10-12T13:00:00",
+        startTime: "2026-02-14T12:00:00",
+        endTime: "2026-02-14T13:00:00",
         contacts: {
-            ana: process.env.NEXT_PUBLIC_ANA_CONTACT,
-            adrian: process.env.NEXT_PUBLIC_ADRIAN_CONTACT
+            ana: process.env.NEXT_PUBLIC_LILI_CONTACT,
+            adrian: process.env.NEXT_PUBLIC_MAX_CONTACT
         },
     };
 

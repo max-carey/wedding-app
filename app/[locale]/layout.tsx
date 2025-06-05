@@ -22,7 +22,7 @@ export default async function RootLayout({ children, params }: { children: React
         <body className={`${montserrat.className} `}>
         <NextIntlClientProvider messages={messages}>
             {isAuthenticated && <Navbar/>}
-            <main className={`w-full flex-grow ${isAuthenticated ? 'mt-[78px]' : ''}`}>
+            <main className={`w-full flex-grow ${isAuthenticated ? 'mt-[100px]' : ''}`}>
                 {children}
             </main>
             {isAuthenticated && <Footer/>}

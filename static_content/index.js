@@ -43,30 +43,24 @@ export const galleryImages = [
         title: "Image 1",
     },
     {
-        id: "2",
-        url: "/images/gallery/img2.jpg",
-        title: "Image 2",
-    },
-    {
         id: "3",
         url: "/images/gallery/img3.jpg",
         title: "Image 3",
     },
     {
-        id: "4",
-        url: "/images/gallery/img4.jpg",
-        title: "Image 4",
+        id: "21",
+        url: "/images/gallery/img21.jpg",
+        title: "Image 21",
     },
     {
         id: "13",
         url: "/images/gallery/img13.jpg",
         title: "Image 13",
     },
-    
     {
-        id: "6",
-        url: "/images/gallery/img6.jpg",
-        title: "Image 6",
+        id: "2",
+        url: "/images/gallery/img2.jpg",
+        title: "Image 2",
     },
     {
         id: "7",
@@ -77,29 +71,47 @@ export const galleryImages = [
         id: "12",
         url: "/images/gallery/img12.jpg",
         title: "Image 12",
-    },  
-   
+    },
+    {
+        id: "6",
+        url: "/images/gallery/img6.jpg",
+        title: "Image 6",
+    },
+    {
+        id: "11",
+        url: "/images/gallery/img11.jpg",
+        title: "Image 11",
+    },
+    {
+        id: "8",
+        url: "/images/gallery/img8.jpg",
+        title: "Image 8",
+    },
     {
         id: "9",
         url: "/images/gallery/img9.jpg",
         title: "Image 9",
     },
     {
+        id: "15",
+        url: "/images/gallery/img15.jpg",
+        title: "Image 15",
+    },
+    {
+        id: "18",
+        url: "/images/gallery/img18.jpg",
+        title: "Image 18",
+    },
+    {
+        id: "17",
+        url: "/images/gallery/img17.jpg",
+        title: "Image 17",
+    },
+    {
         id: "10",
         url: "/images/gallery/img10.jpg",
         title: "Image 10",
     },
-    {
-        id: "11",
-        url: "/images/gallery/img11.jpg",
-        title: "Image 11",
-    },  
-    {
-        id: "8",
-        url: "/images/gallery/img8.jpg",
-        title: "Image 8",
-    },
-  
     {
         id: "5",
         url: "/images/gallery/img5.jpg",
@@ -111,23 +123,8 @@ export const galleryImages = [
         title: "Image 14",
     },
     {
-        id: "15",
-        url: "/images/gallery/img15.jpg",
-        title: "Image 15",
-    },
-    {
-        id: "16",
-        url: "/images/gallery/img16.jpg",
-        title: "Image 16",
-    },
-    {
-        id: "17",
-        url: "/images/gallery/img17.jpg",
-        title: "Image 17",
-    },
-    {
-        id: "18",
-        url: "/images/gallery/img18.jpg",
-        title: "Image 18",
+        id: "22",
+        url: "/images/gallery/img22.jpg",
+        title: "Image 22",
     },
 ];

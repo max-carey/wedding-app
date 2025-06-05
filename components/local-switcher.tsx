@@ -23,31 +23,102 @@ export default function LocalSwitcher() {
       <SelectContent>
         <SelectItem value="en">
           <div className="inline-flex items-center">
-            <svg aria-hidden="true" className="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1990 1050">
-              <g>
-                <g>
-                  <rect y="0.095" style={{fill:"#FFFFFF"}} width="1989.479" height="1048.199"/>
-                  <polygon style={{fill:"#CE1124"}} points="1989.628,419.525 1113.632,419.525 1113.632,0.16 874.514,0.16 874.514,419.525 0.833,419.525 0.833,629.092 874.514,629.092 874.514,1048.284 1113.632,1048.284 1113.632,629.092 1989.628,629.092"/>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 rounded-full me-2" viewBox="0 0 1900 1000">
+              <rect width="1900" height="1000" fill="#fff"/>
+              <g fill="#b22234">
+                <rect y="0" width="1900" height="77"/>
+                <rect y="154" width="1900" height="77"/>
+                <rect y="308" width="1900" height="77"/>
+                <rect y="462" width="1900" height="77"/>
+                <rect y="616" width="1900" height="77"/>
+                <rect y="770" width="1900" height="77"/>
+                <rect y="924" width="1900" height="76"/>
+              </g>
+              <rect width="760" height="538" fill="#3c3b6e"/>
+              <g fill="#fff">
+                <g id="star-row">
+                  <g id="star6">
+                    <polygon points="30,0 11.76,95.11 95.11,36.18  -35.11,36.18 47.76,95.11"
+                            transform="scale(0.1)" />
+                  </g>
                 </g>
                 <g>
-                  <polygon style={{fill:"#00247D"}} points="0.019,122.154 0.019,350.376 433.953,350.376"/>
-                  <polygon style={{fill:"#00247D"}} points="239.417,0.05 233.059,0.339 795.718,297.83 795.718,0.05"/>
-                  <polygon style={{fill:"#CE1124"}} points="667.793,348.932 0.019,0.105 0.019,82.323 508.669,348.932"/>
-                  <polygon style={{fill:"#CE1124"}} points="1322.212,699.36 1989.986,1048.187 1989.986,965.969 1481.336,699.36"/>
-                </g>
-                <g>
-                  <polygon style={{fill:"#00247D"}} points="0.019,927.896 0.019,699.673 433.953,699.673"/>
-                  <polygon style={{fill:"#00247D"}} points="239.417,1050 233.059,1049.71 795.718,752.222 795.718,1050"/>
-                  <polygon style={{fill:"#CE1124"}} points="664.378,699.336 0.456,1048.008 155.729,1048.163 796.355,713.516 796.355,699.336"/>
-                </g>
-                <g>
-                  <polygon style={{fill:"#00247D"}} points="1990,122.104 1990,350.325 1556.068,350.325"/>
-                  <polygon style={{fill:"#00247D"}} points="1750.602,0 1756.96,0.288 1194.303,297.778 1194.303,0"/>
-                  <polygon style={{fill:"#CE1124"}} points="1989.359,0.488 1840.013,0.476 1194.873,337.48 1194.873,349.303 1331.364,349.303"/>
-                </g>
-                <g>
-                  <polygon style={{fill:"#00247D"}} points="1990,927.811 1990,699.588 1556.068,699.588"/>
-                  <polygon style={{fill:"#00247D"}} points="1750.602,1049.913 1756.96,1049.625 1194.303,752.135 1194.303,1049.913"/>
+                  <g transform="translate(60,45)">
+                    <g>
+                      <g transform="translate(0,0)">
+                        <use href="#star6"/>
+                        <use href="#star6" x="120"/>
+                        <use href="#star6" x="240"/>
+                        <use href="#star6" x="360"/>
+                        <use href="#star6" x="480"/>
+                        <use href="#star6" x="600"/>
+                      </g>
+                      <g transform="translate(0,108)">
+                        <use href="#star6"/>
+                        <use href="#star6" x="120"/>
+                        <use href="#star6" x="240"/>
+                        <use href="#star6" x="360"/>
+                        <use href="#star6" x="480"/>
+                        <use href="#star6" x="600"/>
+                      </g>
+                      <g transform="translate(0,216)">
+                        <use href="#star6"/>
+                        <use href="#star6" x="120"/>
+                        <use href="#star6" x="240"/>
+                        <use href="#star6" x="360"/>
+                        <use href="#star6" x="480"/>
+                        <use href="#star6" x="600"/>
+                      </g>
+                      <g transform="translate(0,324)">
+                        <use href="#star6"/>
+                        <use href="#star6" x="120"/>
+                        <use href="#star6" x="240"/>
+                        <use href="#star6" x="360"/>
+                        <use href="#star6" x="480"/>
+                        <use href="#star6" x="600"/>
+                      </g>
+                      <g transform="translate(0,432)">
+                        <use href="#star6"/>
+                        <use href="#star6" x="120"/>
+                        <use href="#star6" x="240"/>
+                        <use href="#star6" x="360"/>
+                        <use href="#star6" x="480"/>
+                        <use href="#star6" x="600"/>
+                      </g>
+                    </g>
+                  </g>
+                  <g transform="translate(120,99)">
+                    <g>
+                      <g transform="translate(0,0)">
+                        <use href="#star6"/>
+                        <use href="#star6" x="120"/>
+                        <use href="#star6" x="240"/>
+                        <use href="#star6" x="360"/>
+                        <use href="#star6" x="480"/>
+                      </g>
+                      <g transform="translate(0,108)">
+                        <use href="#star6"/>
+                        <use href="#star6" x="120"/>
+                        <use href="#star6" x="240"/>
+                        <use href="#star6" x="360"/>
+                        <use href="#star6" x="480"/>
+                      </g>
+                      <g transform="translate(0,216)">
+                        <use href="#star6"/>
+                        <use href="#star6" x="120"/>
+                        <use href="#star6" x="240"/>
+                        <use href="#star6" x="360"/>
+                        <use href="#star6" x="480"/>
+                      </g>
+                      <g transform="translate(0,324)">
+                        <use href="#star6"/>
+                        <use href="#star6" x="120"/>
+                        <use href="#star6" x="240"/>
+                        <use href="#star6" x="360"/>
+                        <use href="#star6" x="480"/>
+                      </g>
+                    </g>
+                  </g>
                 </g>
               </g>
             </svg>
@@ -57,13 +128,11 @@ export default function LocalSwitcher() {
         <SelectItem value="es">
           <div className="inline-flex items-center">
             <svg aria-hidden="true" className="h-3.5 w-3.5 rounded-full me-2"
-                 xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-es"
-                 viewBox="0 0 640 480">
-              <g strokeWidth="1pt" fillRule="evenodd">
-                <path fill="red" d="M0 0h640v480H0z"/>
-                <path fill="#ffc400" d="M0 120h640v240H0z"/>
-                <path fill="red" d="M0 360h640v120H0z"/>
-              </g>
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+              <rect width="213.3" height="480" x="0" y="0" fill="#006341"/>
+              <rect width="213.3" height="480" x="213.3" y="0" fill="#fff"/>
+              <rect width="213.4" height="480" x="426.7" y="0" fill="#ce1126"/>
+              <circle cx="320" cy="240" r="38" fill="#006341" />
             </svg>
             <span>Español</span>
           </div>

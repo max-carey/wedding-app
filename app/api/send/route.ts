@@ -24,7 +24,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
         try {
             const response = await resend.emails.send({
                 to: email,
-                from: 'no-reply@adrianyana.com',
+                from: 'onboarding@resend.dev',
                 subject: 'Boda de Adrian y Ana, 12 de Octubre del 2024 - Bienvenido/Welcome! 🎉',
                 react: EmailTemplate({ firstName: name, lastName: surname, email: email}),
                 text: ``,

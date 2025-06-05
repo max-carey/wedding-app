@@ -23,15 +23,39 @@ interface Values {
     children: string;
     childrenNames: string;
     recaptchaToken: string;
-    bus: string;
-    allergies: string;
-    allergyDetails: string;
     comments: string;
 }
 
 const generateToken = () => {
     return Math.random().toString(36).substr(2, 9);
 };
+
+const test = async (values: Values) => {
+    console.log('Test function called');
+    console.log('Values:', values);
+    
+    try {
+        const response = await fetch('/api/send-to-sheet', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+                name: values.name,
+                lastName: values.surname,
+                assistance: values.assistance === 'true' ? 'SI' : 'NO',
+                accompanist: values.accompanist === 'true' ? 'SI' : 'NO',
+                accompanistName: values.accompanistName,
+                children: values.children === 'true' ? 'SI' : 'NO',
+                childrenNames: values.childrenNames,
+                comments: values.comments,
+                email: values.email
+            }),
+        });
+
+        await response.json();
+    } catch (error) {
+        console.error('Error in test function:', error);        
+    }
+}
 
 const GuestFormFormikEs: React.FC = () => {
     const { executeRecaptcha } = useGoogleReCaptcha();
@@ -50,9 +74,6 @@ const GuestFormFormikEs: React.FC = () => {
         children: '',
         childrenNames: '',
         recaptchaToken: '',
-        bus: '',
-        allergies: '',
-        allergyDetails: '',
         comments: '',
     };
 
@@ -77,18 +98,6 @@ const GuestFormFormikEs: React.FC = () => {
             is: 'yes',
             then: () => Yup.string().required('This field is required'),
         }),
-        bus: Yup.string().when('assistance', {
-            is: 'true',
-            then: () => Yup.string().required('This field is required'),
-        }),
-        allergies: Yup.string().when('assistance', {
-            is: 'true',
-            then: () => Yup.string().required('This field is required'),
-        }),
-        allergyDetails: Yup.string().when('allergies', {
-            is: 'yes',
-            then: () => Yup.string().required('This field is required'),
-        }),
         comments: Yup.string().notRequired()
     });
 
@@ -107,13 +116,14 @@ const GuestFormFormikEs: React.FC = () => {
             const recaptchaToken = await handleCaptcha();
             if (recaptchaToken) {
                 values.recaptchaToken = recaptchaToken;
+                test(values); // Call the test function to log the values
 
                 // Create guest and get document ID
-                const docId = await createGuest(values);
-                console.log('Guest created successfully with ID:', docId);
+                //const docId = await createGuest(values);
+                //console.log('Guest created successfully with ID:', docId);
 
                 // Send email to the provided email address
-                await sendEmail(values);
+                //await sendEmail(values);
 
                 // Reset form after submission
                 setSubmitting(false);
@@ -137,15 +147,15 @@ const GuestFormFormikEs: React.FC = () => {
         title: t('form.eventTitle'),
         description: t('form.eventDescription'),
         location: t('form.eventLocation'),
-        startTime: "2024-10-12T12:00:00",
-        endTime: "2024-10-12T13:00:00",
+        startTime: "2026-02-14T18:00:00",
+        endTime: "2026-02-15T02:00:00",
         contacts: {
-            ana: process.env.NEXT_PUBLIC_ANA_CONTACT,
-            adrian: process.env.NEXT_PUBLIC_ADRIAN_CONTACT
+            ana: process.env.NEXT_PUBLIC_LILI_CONTACT,
+            adrian: process.env.NEXT_PUBLIC_MAX_CONTACT
         },
         bankAccounts: {
-            ana: process.env.NEXT_PUBLIC_ANA_BANK_ACCOUNT,
-            adrian: process.env.NEXT_PUBLIC_ADRIAN_BANK_ACCOUNT
+            ana: process.env.NEXT_PUBLIC_LILI_BANK_ACCOUNT,
+            adrian: process.env.NEXT_PUBLIC_MAX_BANK_ACCOUNT
         }
     };
 
@@ -271,50 +281,7 @@ const GuestFormFormikEs: React.FC = () => {
 
 
                             {values.assistance === 'true' && (
-                                <>
-                                    {/*Public Transport Radio Buttons*/}
-                                    <div className="w-full flex flex-col">
-                                        <label htmlFor="bus"
-                                            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                            {t('form.BusServiceRadioButton.label')}
-                                        </label>
-                                        <div className="flex items-center space-x-4">
-                                            <label className="flex items-center">
-                                                <Field type="radio" name="bus" value="yes" className="hidden" />
-                                                <div
-                                                    className={`w-6 h-6 rounded-full border-2 border-gray-300 flex items-center justify-center mr-2 ${values.bus === 'yes' ? 'bg-accent border-blue-500' : ''}`}>
-                                                    {values.bus === 'yes' && (
-                                                        <svg className="w-4 h-4 text-white" fill="none"
-                                                            viewBox="0 0 24 24" stroke="currentColor">
-                                                            <path strokeLinecap="round" strokeLinejoin="round"
-                                                                strokeWidth={2} d="M5 13l4 4L19 7" />
-                                                        </svg>
-                                                    )}
-                                                </div>
-                                                <span className="text-sm">
-                                                    {t('form.BusServiceRadioButton.yes')}
-                                                </span>
-                                            </label>
-                                            <label className="flex items-center">
-                                                <Field type="radio" name="bus" value="no" className="hidden" />
-                                                <div
-                                                    className={`w-6 h-6 rounded-full border-2 border-gray-300 flex items-center justify-center mr-2 ${values.bus === 'no' ? 'bg-accent border-blue-500' : ''}`}>
-                                                    {values.bus === 'no' && (
-                                                        <svg className="w-4 h-4 text-white" fill="none"
-                                                            viewBox="0 0 24 24" stroke="currentColor">
-                                                            <path strokeLinecap="round" strokeLinejoin="round"
-                                                                strokeWidth={2} d="M5 13l4 4L19 7" />
-                                                        </svg>
-                                                    )}
-                                                </div>
-                                                <span className="text-sm">
-                                                    {t('form.BusServiceRadioButton.no')}
-                                                </span>
-                                            </label>
-                                        </div>
-                                        {errors.bus && touched.bus ?
-                                            <div className="text-red-500">{errors.bus}</div> : null}
-                                    </div>
+                                <>                                    
 
                                     {/*Guest Radio Buttons Section*/}
                                     <div className="form-section p-4 border border-accent rounded-xl">
@@ -435,66 +402,6 @@ const GuestFormFormikEs: React.FC = () => {
                                         </div>
                                     </div>
 
-                                    {/*Allergies Section*/}
-                                    <div className="form-section p-4 border border-accent rounded-xl">
-                                        <h5 className="form-section-title font-semibold mb-4">
-                                            {t('form.AllergiesSection.title')}
-                                        </h5>
-                                        <div className="flex flex-col gap-4">
-                                            <div className="w-full flex flex-col">
-                                                <label htmlFor="allergies"
-                                                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                                    {t('form.AllergiesSection.allergyRadioButton.label')}
-                                                </label>
-                                                <div className="flex items-center space-x-4">
-                                                    <label className="flex items-center">
-                                                        <Field type="radio" name="allergies" value="yes"
-                                                            className="hidden" />
-                                                        <div
-                                                            className={`w-6 h-6 rounded-full border-2 border-gray-300 flex items-center justify-center mr-2 ${values.allergies === 'yes' ? 'bg-accent border-blue-500' : ''}`}>
-                                                            {values.allergies === 'yes' && (
-                                                                <svg className="w-4 h-4 text-white" fill="none"
-                                                                    viewBox="0 0 24 24" stroke="currentColor">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        strokeWidth={2} d="M5 13l4 4L19 7" />
-                                                                </svg>
-                                                            )}
-                                                        </div>
-                                                        <span className="text-sm">
-                                                            {t('form.AllergiesSection.allergyRadioButton.yes')}
-                                                        </span>
-                                                    </label>
-                                                    <label className="flex items-center">
-                                                        <Field type="radio" name="allergies" value="no" className="hidden" />
-                                                        <div
-                                                            className={`w-6 h-6 rounded-full border-2 border-gray-300 flex items-center justify-center mr-2 ${values.allergies === 'no' ? 'bg-accent border-blue-500' : ''}`}>
-                                                            {values.allergies === 'no' && (
-                                                                <svg className="w-4 h-4 text-white" fill="none"
-                                                                    viewBox="0 0 24 24" stroke="currentColor">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        strokeWidth={2} d="M5 13l4 4L19 7" />
-                                                                </svg>
-                                                            )}
-                                                        </div>
-                                                        <span className="text-sm">
-                                                            {t('form.AllergiesSection.allergyRadioButton.no')}
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                {errors.allergies && touched.allergies ?
-                                                    <div className="text-red-500">{errors.allergies}</div> : null}
-                                            </div>
-
-                                            {values.allergies === 'yes' && (
-                                                <div className="w-full">
-                                                    <InputField label={t('form.AllergiesSection.allergiesInput.label')} type={"text"} id={"allergyDetails"} name={"allergyDetails"} placeholder={t('form.AllergiesSection.allergiesInput.placeholder')}>
-                                                        {errors.allergyDetails && touched.allergyDetails ?
-                                                            <div className="text-red-500">{errors.allergyDetails}</div> : null}
-                                                    </InputField>
-                                                </div>
-                                            )}
-                                        </div>
-                                    </div>
 
                                     <div className="form-section p-4 border border-accent rounded-xl">
                                         <h5 className="form-section-title font-semibold mb-4">
@@ -524,7 +431,8 @@ const GuestFormFormikEs: React.FC = () => {
                             <div className="w-full flex justify-center items-center py-8">
                                 <button
                                     type="submit"
-                                    disabled={isSubmitting}
+                                    disabled={isSubmitting || !executeRecaptcha}
+
                                     className="px-4 py-3 bg-white text-button-bg-foreground  border border-accent rounded-lg hover:bg-border uppercase"
                                 >
                                     {t('form.SubmitButton')}
