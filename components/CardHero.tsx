@@ -33,7 +33,7 @@ const CardHero = () => {
                     height={0}
                     className="object-contain h-auto"
                 />
-                <Countdown targetDate="2025-08-14T00:00:00" />
+                <Countdown targetDate="2026-02-14T00:00:00" />
             </div>
         </div>
     );
