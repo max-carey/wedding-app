@@ -111,16 +111,16 @@
       "addGoogleCalendar": "Añadir a Google Calendar",
       "addOutlookCalendar": "Añadir a Outlook Calendar",
       "downloadICS": "Descargar ICS",
-      "eventTitle": "Boda de Adrián y Ana",
-      "eventDescription": "Boda de Adrián y Ana",
-      "eventLocation": "Iglesia de San Francisco, Priego de Córdoba",
+      "eventTitle": "Boda de Lili y Max",
+      "eventDescription": "Boda de Lili y Max",
+      "eventLocation": "Calle Gral. Prim 32, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
       "contacts": {
-        "ana": "Ana",
-        "adrian": "Adrián"
+        "lili": "Lili",
+        "max": "Max"
       },
       "bankAccounts": {
-        "ana": "Cuenta bancaria de Ana",
-        "adrian": "Cuenta bancaria de Adrián"
+        "lili": "Cuenta bancaria de Lili",
+        "max": "Cuenta bancaria de Max"
       }
     },
     "example": {
@@ -162,5 +162,11 @@
     "title": "Sobre Nosotros",
     "sectionTitle": "Sobre Nosotros",
     "description": "Una joven prieguense y un sayagués,\ncruzaron sus caminos en un destino lejano.\nLo que empezó como amistad sincera,\nse transformó en amor, una pasión verdadera.\n\nPara crecer juntos, un sueño abrazaron,\ny hacia Irlanda juntos marcharon.\nComo guiris en Mallorca, bajo estrellas en calma,\nen Cala Mendia eligieron compartir su amor para el resto de sus vidas."
-  }
+  },
+  "Countdown": {
+  "days": "DÍA(S)",
+  "hours": "HORA(S)",
+  "minutes": "MINUTO(S)",
+  "seconds": "SEGUNDO(S)"
+}
 }

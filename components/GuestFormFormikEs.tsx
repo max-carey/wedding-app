@@ -30,9 +30,8 @@ const generateToken = () => {
     return Math.random().toString(36).substr(2, 9);
 };
 
-const test = async (values: Values) => {
-    console.log('Test function called');
-    console.log('Values:', values);
+const sendToSheet = async (values: Values) => {
+    console.log('Send to Sheet function called');
     
     try {
         const response = await fetch('/api/send-to-sheet', {
@@ -116,14 +115,14 @@ const GuestFormFormikEs: React.FC = () => {
             const recaptchaToken = await handleCaptcha();
             if (recaptchaToken) {
                 values.recaptchaToken = recaptchaToken;
-                test(values); // Call the test function to log the values
+                await sendToSheet(values); // Call the sendToSheet function to log the values
 
                 // Create guest and get document ID
                 //const docId = await createGuest(values);
                 //console.log('Guest created successfully with ID:', docId);
 
                 // Send email to the provided email address
-                //await sendEmail(values);
+                await sendEmail(values);
 
                 // Reset form after submission
                 setSubmitting(false);
@@ -150,12 +149,12 @@ const GuestFormFormikEs: React.FC = () => {
         startTime: "2026-02-14T18:00:00",
         endTime: "2026-02-15T02:00:00",
         contacts: {
-            ana: process.env.NEXT_PUBLIC_LILI_CONTACT,
-            adrian: process.env.NEXT_PUBLIC_MAX_CONTACT
+            lili: process.env.NEXT_PUBLIC_LILI_CONTACT,
+            max: process.env.NEXT_PUBLIC_MAX_CONTACT
         },
         bankAccounts: {
-            ana: process.env.NEXT_PUBLIC_LILI_BANK_ACCOUNT,
-            adrian: process.env.NEXT_PUBLIC_MAX_BANK_ACCOUNT
+            lili: process.env.NEXT_PUBLIC_LILI_BANK_ACCOUNT,
+            max: process.env.NEXT_PUBLIC_MAX_BANK_ACCOUNT
         }
     };
 
@@ -167,7 +166,7 @@ const GuestFormFormikEs: React.FC = () => {
     const end = new Date(endTime).toISOString().replace(/-|:|\.\d+/g, '').slice(0, 15) + 'Z';
 
     // Event details with contacts (bank accounts removed)
-    const detailsWithContacts = `${description}\n\n${t('form.contacts.ana')}: ${contacts.ana}\n${t('form.contacts.adrian')}: ${contacts.adrian}`;
+    const detailsWithContacts = `${description}\n\n${t('form.contacts.lili')}: ${contacts.lili}\n${t('form.contacts.max')}: ${contacts.max}`;
 
     // Encode newlines for Google Calendar URL
     const detailsWithContactsForUrl = encodeURIComponent(detailsWithContacts).replace(/%0A/g, '%0D%0A');

@@ -115,16 +115,16 @@
       "addGoogleCalendar": "Add to Google Calendar",
       "addOutlookCalendar": "Add to Outlook Calendar",
       "downloadICS": "Download ICS",
-      "eventTitle": "Wedding of Adrian and Ana",
-      "eventDescription": "Wedding of Adrian and Ana",
-      "eventLocation": "Church of San Francisco, Priego de Córdoba",
+      "eventTitle": "Wedding of Lili and Max",
+      "eventDescription": "Wedding of Lili and Max",
+      "eventLocation": "Calle Gral. Prim 32, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
       "contacts": {
-        "ana": "Ana",
-        "adrian": "Adrian"
+        "lili": "Lili",
+        "max": "Max"
       },
       "bankAccounts": {
-        "ana": "Ana's bank account",
-        "adrian": "Adrian's bank account"
+        "lili": "Lili's bank account",
+        "max": "Max's bank account"
       }
     },
     "example": {
@@ -169,5 +169,11 @@
     "PartyEvent": "Party Event",
     "IglesiaAlt": "Church",
     "GenillaAlt": "Genilla"
+  },
+  "Countdown": {
+    "days": "DAY(S)",
+    "hours": "HOUR(S)",
+    "minutes": "MINUTE(S)",
+    "seconds": "SECOND(S)"
   }
 }

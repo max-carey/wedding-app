@@ -10,9 +10,9 @@ interface Event {
 
 const AddToCalendar: FC = () => {
     const event: Event = {
-        title: "Boda de Adrian y Ana",
-        description: "Boda de Adrian y Ana",
-        location: "Iglesia de San Francisco, Priego de Córdoba",
+        title: "Boda de Lili y Max",
+        description: "Boda de Lili y Max",
+        location: "Calle Gral. Prim 32, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
         startTime: "2024-10-12T12:00:00",
         endTime: "2024-10-12T14:00:00" 
     };
@@ -27,16 +27,16 @@ const AddToCalendar: FC = () => {
     const outlookCalendarUrl = `https://outlook.live.com/calendar/0/deeplink/compose?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(description)}&startdt=${startTime}&enddt=${endTime}&location=${encodeURIComponent(location)}`;
 
     const icsContent = `
-    BEGIN:VCALENDAR
-    VERSION:2.0
-    BEGIN:VEVENT
-    SUMMARY:${title}
-    DESCRIPTION:${description}
-    LOCATION:${location}
-    DTSTART:${start}
-    DTEND:${end}
-    END:VEVENT
-    END:VCALENDAR
+        BEGIN:VCALENDAR
+        VERSION:2.0
+        BEGIN:VEVENT
+        SUMMARY:${title}
+        DESCRIPTION:${description}
+        LOCATION:${location}
+        DTSTART:${start}
+        DTEND:${end}
+        END:VEVENT
+        END:VCALENDAR
     `;
     const icsFile = new Blob([icsContent], {type: 'text/calendar'});
     const icsUrl = URL.createObjectURL(icsFile);

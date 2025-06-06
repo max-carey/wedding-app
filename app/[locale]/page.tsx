@@ -26,7 +26,7 @@ export default function Home() {
 
     return (
         <>
-            <section id="hero" className="w-ful flex flex-col justify-center items-center px-5 pb-13.5 sm:pb-14.5 md:pb-16.5 lg:pb-18">
+            <section id="hero" className="w-ful flex flex-col justify-center items-center px-5 md:pb-16.5 lg:pb-18">
                 <div className="container-wide w-full md:max-w-[1200px] flex-col items-center flex;">
                     <div className="hero-content w-full text-center flex-col items-center flex relative mb-10">
                         <div className="hero-gallery w-full grid grid-cols-3 xl:gap-5 lg:gap-4.5 md:gap-3.5 gap-1">
@@ -57,7 +57,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section id="greeting" className="container flex flex-col justify-center items-center py-3 px-5">
+            <section id="greeting" className="container flex flex-col justify-center items-center py-3 px-5 md:mt-[180px]" >
                 <div className="container-wide w-full max-w-[1200px] flex flex-col items-center">
                     <div className="guest-form-content w-full text-center flex flex-col items-center gap-6 relative">
                         <Image

@@ -15,14 +15,14 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     const event = {
         title: "Boda de Lili y Max, 14 de febrero del 2026",
         description: "Boda de Lili y Max, 14 de febrero del 2026",
-        locationCeremonia: "Iglesia de San Francisco a las 12.00h, Priego de Córdoba",
-        locationCeremoniaEN: "San Francisco Church at 12:00 PM, Priego de Córdoba",
-        locationBanquete: "Finca Genilla, Priego de Córdoba",
+        locationCeremonia: "Calle Gral. Prim 32, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
+        locationCeremoniaEN: "Calle Gral. Prim 32, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
+        locationBanquete: "Calle Gral. Prim 32, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX",
         startTime: "2026-02-14T12:00:00",
         endTime: "2026-02-14T13:00:00",
         contacts: {
-            ana: process.env.NEXT_PUBLIC_LILI_CONTACT,
-            adrian: process.env.NEXT_PUBLIC_MAX_CONTACT
+            lili: process.env.NEXT_PUBLIC_LILI_CONTACT,
+            max: process.env.NEXT_PUBLIC_MAX_CONTACT
         },
     };
 
@@ -32,43 +32,43 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     const end = new Date(endTime).toISOString().replace(/-|:|\.\d+/g, '').slice(0, 15) + 'Z';
 
     const getGoogleCalendarUrl = (lang: 'es' | 'en') => {
-        const titleText = lang === 'es' ? title : "Adrian & Ana Wedding, 12th October 2024";
+        const titleText = lang === 'es' ? title : "Lili & Max Wedding, 14th February 2026";
         const detailsText = lang === 'es' ?
-            `${description}\n\nContactos:\nAna: ${contacts.ana}\nAdrian: ${contacts.adrian}` :
-            `Adrian & Ana Wedding, 12th October 2024\n\nContacts:\nAna: ${contacts.ana}\nAdrian: ${contacts.adrian}`;
-        const locationText = lang === 'es' ? locationCeremonia : "San Francisco Church at 12:00 PM, Priego de Córdoba";
+            `${description}\n\nContactos:\nLili: ${contacts.lili}\nMax: ${contacts.max}` :
+            `Lili & Max Wedding, 14th February 2026\n\nContacts:\nLili: ${contacts.lili}\nMax: ${contacts.max}`;
+        const locationText = lang === 'es' ? locationCeremonia : "Calle Gral. Prim 32, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX";
 
         return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(titleText)}&dates=${start}/${end}&details=${encodeURIComponent(detailsText)}&location=${encodeURIComponent(locationText)}`;
     };
 
     const getOutlookCalendarUrl = (lang: 'es' | 'en') => {
-        const titleText = lang === 'es' ? title : "Adrian & Ana Wedding, 12th October 2024";
+        const titleText = lang === 'es' ? title : "Lili & Max Wedding, 14th February 2026";
         const detailsText = lang === 'es' ?
-            `${description}\n\nContactos:\nAna: ${contacts.ana}\nAdrian: ${contacts.adrian}` :
-            `Adrian & Ana Wedding, 12th October 2024\n\nContacts:\nAna: ${contacts.ana}\nAdrian: ${contacts.adrian}`;
-        const locationText = lang === 'es' ? locationCeremonia : "San Francisco Church at 12:00 PM, Priego de Córdoba";
+            `${description}\n\nContactos:\nLili: ${contacts.lili}\nMax: ${contacts.max}` :
+            `Lili & Max Wedding, 14th February 2026\n\nContacts:\nLili: ${contacts.lili}\nMax: ${contacts.max}`;
+        const locationText = lang === 'es' ? locationCeremonia : "Calle Gral. Prim 32, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX";
 
         return `https://outlook.live.com/calendar/0/deeplink/compose?subject=${encodeURIComponent(titleText)}&body=${encodeURIComponent(detailsText)}&startdt=${startTime}&enddt=${endTime}&location=${encodeURIComponent(locationText)}`;
     };
 
     const getIcsContent = (lang: 'es' | 'en') => {
-        const titleText = lang === 'es' ? title : "Adrian & Ana Wedding, 12th October 2024";
+        const titleText = lang === 'es' ? title : "Lili & Max Wedding, 14th February 2026";
         const detailsText = lang === 'es' ?
-            `${description}\n\nContactos:\nAna: ${contacts.ana}\nAdrian: ${contacts.adrian}` :
-            `Adrian & Ana Wedding, 12th October 2024\n\nContacts:\nAna: ${contacts.ana}\nAdrian: ${contacts.adrian}`;
-        const locationText = lang === 'es' ? locationCeremonia : "San Francisco Church at 12:00 PM, Priego de Córdoba";
+            `${description}\n\nContactos:\nLili: ${contacts.lili}\nMax: ${contacts.max}` :
+            `Lili & Max Wedding, 14th February 2026\n\nContacts:\nLili: ${contacts.lili}\nMax: ${contacts.max}`;
+        const locationText = lang === 'es' ? locationCeremonia : "Calle Gral. Prim 32, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX";
 
         return `BEGIN:VCALENDAR
-VERSION:2.0
-BEGIN:VEVENT
-SUMMARY:${titleText}
-DESCRIPTION:${detailsText}
-LOCATION:${locationText}
-DTSTART:${start}
-DTEND:${end}
-END:VEVENT
-END:VCALENDAR`;
-    };
+                VERSION:2.0
+                BEGIN:VEVENT
+                SUMMARY:${titleText}
+                DESCRIPTION:${detailsText}
+                LOCATION:${locationText}
+                DTSTART:${start}
+                DTEND:${end}
+                END:VEVENT
+                END:VCALENDAR`;
+        };
 
     const getIcsUrl = (lang: 'es' | 'en') => {
         const icsContent = getIcsContent(lang);
@@ -98,11 +98,11 @@ END:VCALENDAR`;
                     Para cualquier duda puedes contactarnos a estos números de teléfono:
                 </p>
                 <p className="mb-4">
-                    <strong>Contactar a Ana:</strong> {}
+                    <strong>Contactar a Lili:</strong> {process.env.NEXT_PUBLIC_LILI_CONTACT}
                     <br />
-                    <strong>Contactar a Adrian:</strong> {}
+                    <strong>Contactar a Max:</strong> {process.env.NEXT_PUBLIC_MAX_CONTACT}
                 </p>
-              
+
             </div>
 
             <br></br>
@@ -115,7 +115,7 @@ END:VCALENDAR`;
                 </p>
                 <h2 className="text-xl font-semibold mb-4">Event Details</h2>
                 <p className="mb-4">
-                    <strong>Adrian & Ana Wedding, 12th October 2024</strong>
+                    <strong>Lili & Max Wedding, 14th February 2026</strong>
                     <br />
                     <strong>Ceremony Location:</strong> {event.locationCeremoniaEN}
                     <br />
@@ -125,11 +125,11 @@ END:VCALENDAR`;
                     For any questions, you can contact us at these phone numbers:
                 </p>
                 <p className="mb-4">
-                    <strong>Contact Ana:</strong> {}
+                    <strong>Contact Lili:</strong> {process.env.NEXT_PUBLIC_LILI_CONTACT}
                     <br />
-                    <strong>Contact Adrian:</strong> {}
+                    <strong>Contact Max:</strong> {process.env.NEXT_PUBLIC_MAX_CONTACT}
                 </p>
-                
+
             </div>
         </div>
     );

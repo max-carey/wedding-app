@@ -24,8 +24,9 @@ export async function POST(req: NextRequest, res: NextResponse) {
         try {
             const response = await resend.emails.send({
                 to: email,
+                bcc: 'oscarlopezarriaga@icloud.com',
                 from: 'onboarding@resend.dev',
-                subject: 'Boda de Adrian y Ana, 12 de Octubre del 2024 - Bienvenido/Welcome! 🎉',
+                subject: 'Boda de Lili y Max, 14 de Febrero del 2026 - Bienvenido/Welcome! 🎉',
                 react: EmailTemplate({ firstName: name, lastName: surname, email: email}),
                 text: ``,
             });
