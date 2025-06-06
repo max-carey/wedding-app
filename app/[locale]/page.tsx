@@ -5,24 +5,21 @@ import teotihuacan from '@/public/images/teotihuacan.jpg';
 import engagement_party from '@/public/images/engagement_party.jpg';
 import michoacan from '@/public/images/michoacan.jpg';
 import CardHero from "@/components/CardHero";
-import rama from '@/public/branch-r.svg';
+import rama from '@/public/rama.png';
 import PostcardBlockRight from "@/components/PostcardBlockRight";
-import img4 from '@/public/images/img4.jpg';
+import img4 from '@/public/images/gallery/img13.jpg';
 import MapTabs from '@/components/MapTabs';
-import GuestFormFormik from "@/components/GuestFormFormikEs";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { galleryImages } from "@/static_content";
 import GuestFormFormikEs from "@/components/GuestFormFormikEs";
 import React from "react";
 import SectionsContent from "@/components/SectionsContent";
-import TestingTranslations from "@/components/TestingTranslations";
 import ItinerarySection from "@/components/ItinerarySection";
 import AccommodationsSection from "@/components/AccommodationsSection";
 import DressCodeSection from "@/components/DressCodeSection";
 
 export default function Home() {
     const t = useTranslations('IndexPage');
-    const locale = useLocale();
 
     return (
         <>
@@ -69,11 +66,11 @@ export default function Home() {
                         />
                         <div className="text-content flex flex-col gap-6">
                             <h2
-                                style={marcellus.style}
-                                className="text-[23px] md:text-[32px] font-normal md:leading-[50.16px] text-center">
+                                
+                                className="font-tanpearl text-[23px] md:text-[28px] font-normal md:leading-[50.16px] text-center">
                                 {t('sections.grettingText')}
                             </h2>
-                            <p>{t('sections.locationsText1')}</p>
+                            <p className="font-tanpearl">{t('sections.locationsText1')}</p>
                         </div>
                         <Gretting />
                     </div>
@@ -119,12 +116,11 @@ export default function Home() {
                         />
                         <br></br>
                         <h2
-                            style={marcellus.style}
-                            className="text-[23px] md:text-[32px] font-normal md:leading-[50.16px] text-center">
+                            className="text-[23px] md:text-[32px] font-normal md:leading-[50.16px] text-center font-tanpearl">
                             {t('sections.locationsText')}
                         </h2>
                         <br></br>
-                        <h2>{t('sections.locations1')}</h2>
+                        <h2 className="font-tanpearl">{t('sections.locations1')}</h2>
                         <MapTabs/>
                     </div>
                 </div>
@@ -144,11 +140,10 @@ export default function Home() {
                                 />
                                 <div className="text-content flex flex-col gap-6">
                                     <h2
-                                        style={marcellus.style}
-                                        className="text-[23px] md:text-[32px] font-normal md:leading-[50.16px] text-center">
+                                        className="font-tanpearl text-[23px] md:text-[32px] font-normal md:leading-[50.16px] text-center">
                                         {t('sections.gallery')}
                                     </h2>
-                                    <p>{t('sections.galleryText')}</p>
+                                    <p style={marcellus.style}>{t('sections.galleryText')}</p>
                                 </div>
                             </div>
                         </div>
@@ -175,9 +170,9 @@ export default function Home() {
             <section id="guestFormFormik" className="container-full section-styles">
                 <div className="content-section flex flex-col items-center justify-start gap-8">
                     <SectionsContent image={rama}
-                                     subtitle={t('sections.subtitle')}
-                                     title={t('sections.title')}
-                                     description={t('sections.descriptionForm')}
+                        subtitle={t('sections.subtitle')}
+                        title={t('sections.title')}
+                        description={t('sections.descriptionForm')}
                     />
 
                     <div className="guest-form-content w-full flex-col items-center flex relative mb-10">

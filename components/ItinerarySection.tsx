@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { marcellus } from "@/styles/fonts";
-import rama from '@/public/branch-r.svg';
+import rama from '@/public/rama.png';
 import { useTranslations } from 'next-intl';
 
 interface TimelineEvent {
@@ -70,8 +70,7 @@ export default function ItinerarySection() {
                         className="h-auto object-contain mb-[14px]"
                     />
                     <h2
-                        style={marcellus.style}
-                        className="text-[23px] md:text-[32px] font-normal md:leading-[50.16px] text-center mb-8">
+                        className="font-tanpearl text-[23px] md:text-[32px] font-normal md:leading-[50.16px] text-center mb-8">
                         {t('sections.Itinerary')}
                     </h2>
                     

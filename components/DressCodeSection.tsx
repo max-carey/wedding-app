@@ -21,15 +21,14 @@ const DressCodeSection = () => {
                         className="h-auto object-contain mb-[14px]"
                     />
                     <h2
-                        style={marcellus.style}
-                        className="text-[23px] md:text-[32px] font-normal md:leading-[50.16px] text-center mb-8">
+                        className="font-tanpearl text-[23px] md:text-[32px] font-normal md:leading-[50.16px] text-center mb-8">
                         {t('sections.DressCode')}
                     </h2>
                     <div className="text-content flex flex-col gap-6 max-w-3xl">
-                        <h3 className="text-xl font-semibold text-[#2E5A27]">
+                        <h3 className="text-xl font-semibold text-[#7D9B76]" style={marcellus.style}>
                             {t('sections.dressCodeTitle')}
                         </h3>
-                        <p className="text-lg">
+                        <p className="text-lg" style={marcellus.style}>
                             {t('sections.dressCodeDescription')}
                         </p>
                     </div>

@@ -5,10 +5,7 @@ import React, { useState } from 'react';
 import { GoogleReCaptchaProvider, useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 import * as Yup from 'yup';
 import { sendEmail } from "@/api/emails/sendEmail";
-import { createGuest } from "@/api/fb-database/createGuest";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Terminal } from "lucide-react";
-import { Label } from "@/components/ui/label";
 import InputField from "@/components/InputField";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -57,7 +54,6 @@ const sendToSheet = async (values: Values) => {
 }
 
 const GuestFormFormikEs: React.FC = () => {
-    const { executeRecaptcha } = useGoogleReCaptcha();
     const [isVerified, setIsVerified] = useState(true);
     const [formSubmitted, setFormSubmitted] = useState(false);
     const [assistanceConfirmed, setAssistanceConfirmed] = useState<boolean | null>(null);
@@ -100,39 +96,22 @@ const GuestFormFormikEs: React.FC = () => {
         comments: Yup.string().notRequired()
     });
 
-    const handleCaptcha = async () => {
-        if (!executeRecaptcha) {
-            console.error('Execute recaptcha not yet available');
-            return;
-        }
-
-        const token = await executeRecaptcha('submitForm');
-        return token;
-    };
-
     const handleSubmit = async (values: Values, { setSubmitting }: FormikHelpers<Values>) => {
         try {
-            const recaptchaToken = await handleCaptcha();
-            if (recaptchaToken) {
-                values.recaptchaToken = recaptchaToken;
-                await sendToSheet(values); // Call the sendToSheet function to log the values
+            await sendToSheet(values); // Call the sendToSheet function to log the values
 
-                // Create guest and get document ID
-                //const docId = await createGuest(values);
-                //console.log('Guest created successfully with ID:', docId);
+            // Create guest and get document ID
+            //const docId = await createGuest(values);
+            //console.log('Guest created successfully with ID:', docId);
 
-                // Send email to the provided email address
-                await sendEmail(values);
+            // Send email to the provided email address
+            await sendEmail(values);
 
-                // Reset form after submission
-                setSubmitting(false);
-                setIsVerified(true);
-                setFormSubmitted(true);  // Show confirmation message
-                setAssistanceConfirmed(values.assistance === 'true');
-            } else {
-                console.error('Failed to get reCAPTCHA token');
-                setIsVerified(false);
-            }
+            // Reset form after submission
+            setSubmitting(false);
+            setIsVerified(true);
+            setFormSubmitted(true);  // Show confirmation message
+            setAssistanceConfirmed(values.assistance === 'true');
         } catch (error) {
             console.error('Error submitting form:', error);
             setIsVerified(false);
@@ -430,7 +409,7 @@ const GuestFormFormikEs: React.FC = () => {
                             <div className="w-full flex justify-center items-center py-8">
                                 <button
                                     type="submit"
-                                    disabled={isSubmitting || !executeRecaptcha}
+                                    disabled={isSubmitting}
 
                                     className="px-4 py-3 bg-white text-button-bg-foreground  border border-accent rounded-lg hover:bg-border uppercase"
                                 >
@@ -492,9 +471,7 @@ const GuestFormFormikEs: React.FC = () => {
 
 const WrappedGuestForm: React.FC = () => {
     return (
-        <GoogleReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}>
-            <GuestFormFormikEs />
-        </GoogleReCaptchaProvider>
+        <GuestFormFormikEs />
     );
 };
 

@@ -26,6 +26,11 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        tanpearl: ['Tan Pearl', 'serif'],
+        parfumerieScript: ['Parfumerie Script', 'cursive'],
+        marcellus: ['Marcellus', 'serif'],
+      },
       gridTemplateColumns: {
         'custom-postcard': '1fr 50px 50px 1fr',
       },

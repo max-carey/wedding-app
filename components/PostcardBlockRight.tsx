@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
-import ramal from '@/public/branch-l.svg';
+import ramal from '@/public/rama.png';
 import { useTranslations } from 'next-intl';
+import {marcellus} from "@/styles/fonts";
+
 
 const PostcardBlockRight = () => {
     const t = useTranslations('AboutUs');
@@ -16,11 +18,10 @@ const PostcardBlockRight = () => {
                     className="mb-4"
                 />
                 <h2
-                    style={{fontFamily: 'Marcellus'}}
-                    className="text-[23px] md:text-[32px] font-normal md:leading-[50.16px] text-center">
+                    className="font-tanpearl text-[23px] md:text-[32px] font-normal md:leading-[50.16px] text-center">
                     {t('sectionTitle')}
                 </h2>
-                <p className="paragraph mt-4">
+                <p className=" mt-4" style={marcellus.style}>
                     {t('description')}
                 </p>
             </div>

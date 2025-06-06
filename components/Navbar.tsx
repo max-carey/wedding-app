@@ -23,7 +23,7 @@ const Navbar = () => {
             <div className="mx-6 flex flex-wrap items-center justify-between w-full">
                 <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <span
-                        className="self-center text-2xl font-semibold whitespace-nowrap text-[#2E5A27]"
+                        className="self-center text-2xl font-semibold whitespace-nowrap text-[#7D9B76]"
                     >
                         <Image
                             width={80}
@@ -39,7 +39,7 @@ const Navbar = () => {
                     </div>
 
                     <button onClick={toggleMenu} data-collapse-toggle="navbar-language" type="button"
-                            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#2E5A27] rounded-full 2xl:hidden bg-[#E8F0E8] hover:bg-[#D8E4D8] focus:outline-none focus:ring-2 focus:ring-[#2E5A27] transition-colors duration-200"
+                            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#7D9B76] rounded-full 2xl:hidden bg-[#E8F0E8] hover:bg-[#D8E4D8] focus:outline-none focus:ring-2 focus:ring-[#7D9B76] transition-colors duration-200"
                             aria-controls="navbar-language" aria-expanded={isOpen}>
                         <span className="sr-only">Open main menu</span>
                         <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -54,47 +54,47 @@ const Navbar = () => {
                     id="navbar-language">
                     <ul className="2xl:flex flex-col tracking-[0.25em] font-normal p-4 md:p-0 mt-4 border border-[#E8F0E8] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                         <li>
-                            <a href="/" className="block py-2 px-3 font-bold text-[#2E5A27] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu} aria-current="page">
+                            <a href="/" className="block py-2 px-3 font-bold text-[#7D9B76] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu} aria-current="page">
                             {t('sections.Home')} 
                             </a>
                         </li>
                         <li>
-                            <a href="#greeting" className="block py-2 px-3 text-[#2E5A27] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu}>
+                            <a href="#greeting" className="block py-2 px-3 text-[#7D9B76] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu}>
                             {t('sections.Greeting')} 
                             </a>
                         </li>
                         <li>
-                            <a href="#about-us" className="block py-2 px-3 text-[#2E5A27] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu}>
+                            <a href="#about-us" className="block py-2 px-3 text-[#7D9B76] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu}>
                             {t('sections.AboutUs')} 
                             </a>
                         </li>
                         <li>
-                            <a href="#itinerary" className="block py-2 px-3 text-[#2E5A27] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu}>
+                            <a href="#itinerary" className="block py-2 px-3 text-[#7D9B76] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu}>
                             {t('sections.Itinerary')} 
                             </a>
                         </li>
                         <li>
-                            <a href="#gallery" className="block py-2 px-3 text-[#2E5A27] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu}>
+                            <a href="#gallery" className="block py-2 px-3 text-[#7D9B76] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu}>
                             {t('sections.Gallery')}  
                             </a>
                         </li>
                         <li>
-                            <a href="#localitations" className="block py-2 px-3 text-[#2E5A27] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu}>
+                            <a href="#localitations" className="block py-2 px-3 text-[#7D9B76] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu}>
                             {t('sections.Locations')}  
                             </a>
                         </li>
                         <li>
-                            <a href="#accommodations" className="block py-2 px-3 text-[#2E5A27] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu}>
+                            <a href="#accommodations" className="block py-2 px-3 text-[#7D9B76] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu}>
                             {t('sections.Accommodations')}  
                             </a>
                         </li>
                         <li>
-                            <a href="#dress-code" className="block py-2 px-3 text-[#2E5A27] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu}>
+                            <a href="#dress-code" className="block py-2 px-3 text-[#7D9B76] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu}>
                             {t('sections.DressCode')}  
                             </a>
                         </li>
                         <li>
-                            <a href="#guestFormFormik" className="block py-2 px-3 text-[#2E5A27] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu}>
+                            <a href="#guestFormFormik" className="block py-2 px-3 text-[#7D9B76] hover:text-[#3A7232] transition-colors duration-200" onClick={closeMenu}>
                             {t('sections.RSVP')}   
                             </a>
                         </li>

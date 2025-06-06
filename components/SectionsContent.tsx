@@ -2,6 +2,8 @@ import React from 'react';
 import Image, {StaticImageData} from "next/image";
 import rama from "@/public/rama.png";
 import GuestFormFormikEs from "@/components/GuestFormFormikEs";
+import {marcellus} from "@/styles/fonts";
+
 
 interface SectionsContentProps {
     image: StaticImageData;
@@ -20,15 +22,14 @@ const SectionsContent: React.FC<SectionsContentProps> = ({image, subtitle, title
                 className="h-auto object-contain mb-[14px]"
             />
 
-            <span className="subtitle uppercase mb-4">
-                            {subtitle}
-                        </span>
+            <span className="uppercase mb-4" style={marcellus.style}>
+                {subtitle}
+            </span>
             <h2
-                style={{fontFamily: 'Marcellus'}}
-                className="heading text-3xl font-bold uppercase">
+                className="font-tanpearl text-3xl font-bold">
                 {title}
             </h2>
-            <p className="paragraph mt-4">
+            <p className="mt-4" style={marcellus.style}>
                 {description}
             </p>
         </div>

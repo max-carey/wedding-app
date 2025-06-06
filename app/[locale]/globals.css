@@ -6,6 +6,26 @@
 @tailwind utilities;
 
 /* Custom Base Styles */
+@font-face {
+  font-family: 'Tan Pearl';
+  src: url('/fonts/tan-pearl/tan-pearl.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Perfumerie Script';
+  src: url('/fonts/perfumerie-script/parfumerie-script-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-parfumerieScript {
+  font-family: 'Perfumerie Script', cursive;
+}
+
 @layer base {
   :root {
     --background: 120, 25%, 97%;
@@ -34,7 +54,7 @@
     --chart-3: 120, 30%, 65%;
     --chart-4: 120, 25%, 75%;
     --chart-5: 120, 20%, 85%;
-    --button-bg: #2E5A27;
+    --button-bg: #7D9B76;
     --button-bg-foreground: #FFFFFF;
     --button-text: #FFFFFF;
   }
@@ -81,7 +101,7 @@
     overflow-x: inherit;
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: #f6f6e9;
     margin: 0;
     background-image: 
       radial-gradient(circle at 100% 0%, rgba(46, 90, 39, 0.03) 0%, transparent 50%),

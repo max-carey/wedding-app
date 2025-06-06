@@ -1,16 +1,16 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import { useTranslations } from 'next-intl'; 
-
+import { useTranslations } from 'next-intl';
 
 interface CountdownProps {
-  targetDate: string; // formato: '2026-02-14T00:00:00'
+  targetDate: string;
 }
 
 const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
   const t = useTranslations('Countdown');
+  const [timeLeft, setTimeLeft] = useState<{days: number, hours: number, minutes: number, seconds: number} | null>(null);
 
-  const calculateTimeLeft = () => {
+  const calculateTimeLeft = React.useCallback(() => {
     const difference = +new Date(targetDate) - +new Date();
     let timeLeft = {
       days: 0,
@@ -27,35 +27,36 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
       };
     }
     return timeLeft;
-  };
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  }, [targetDate]);
 
   useEffect(() => {
+    setTimeLeft(calculateTimeLeft());
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
     return () => clearInterval(timer);
-  }, [targetDate]);
+  }, [targetDate, calculateTimeLeft]);
+
+  if (!timeLeft) return null; // No renderiza nada en SSR
 
   return (
     <div className="flex flex-col items-center my-8">
-      <div className="flex space-x-4 text-center">
+      <div className="flex space-x-2 md:space-x-4 text-center">
         <div>
-          <span className="text-3xl">{String(timeLeft.days).padStart(3, '0')}</span>
-          <div className="text-xs">{t('days')}</div>
+          <span className="md:text-3xl">{String(timeLeft.days).padStart(2, '0')}</span>
+          <div className="font-tanpearl text-xs">{t('days')}</div>
         </div>
         <div>
-          <span className="text-3xl">{String(timeLeft.hours).padStart(2, '0')}</span>
-          <div className="text-xs">{t('hours')}</div>
+          <span className="md:text-3xl">{String(timeLeft.hours).padStart(2, '0')}</span>
+          <div className="font-tanpearl text-xs">{t('hours')}</div>
         </div>
         <div>
-          <span className="text-3xl">{String(timeLeft.minutes).padStart(2, '0')}</span>
-          <div className="text-xs">{t('minutes')}</div>
+          <span className="md:text-3xl">{String(timeLeft.minutes).padStart(2, '0')}</span>
+          <div className="font-tanpearl text-xs">{t('minutes')}</div>
         </div>
         <div>
-          <span className="text-3xl">{String(timeLeft.seconds).padStart(2, '0')}</span>
-          <div className="text-xs">{t('seconds')}</div>
+          <span className="md:text-3xl">{String(timeLeft.seconds).padStart(2, '0')}</span>
+          <div className="font-tanpearl text-xs">{t('seconds')}</div>
         </div>
       </div>
     </div>

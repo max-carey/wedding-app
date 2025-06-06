@@ -3,9 +3,7 @@ import { NextResponse } from 'next/server';
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    console.log('Received data:', body);
     
-
     const scriptUrl = 'https://script.google.com/macros/s/AKfycbwOIEceCob21rcDrQxIxrytZg6_6IWp5JN4IQZ0AfqiD61bfmY-LxpboUZNQ_dK4uNqpw/exec';
 
     const response = await fetch(scriptUrl, {

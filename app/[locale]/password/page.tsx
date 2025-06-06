@@ -40,7 +40,7 @@ export default function PasswordPage() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#F7FAF7] p-4">
       <div className="w-full max-w-md space-y-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-[#2E5A27]">
+          <h2 className="text-3xl font-extrabold text-[#7D9B76]">
             {t('title')}
           </h2>
           <p className="mt-2 text-sm text-gray-600">
@@ -58,7 +58,7 @@ export default function PasswordPage() {
               name="password"
               type="password"
               required
-              className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-[#2E5A27] focus:border-[#2E5A27] focus:z-10 sm:text-sm"
+              className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-[#7D9B76] focus:border-[#7D9B76] focus:z-10 sm:text-sm"
               placeholder={t('passwordPlaceholder')}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -74,7 +74,7 @@ export default function PasswordPage() {
             <button
               type="submit"
               disabled={isLoading}
-              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-[#2E5A27] hover:bg-[#3A7232] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2E5A27] disabled:opacity-50 disabled:cursor-not-allowed"
+              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-[#7D9B76] hover:bg-[#3A7232] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#7D9B76] disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isLoading ? t('loadingButton') : t('submitButton')}
             </button>

@@ -46,13 +46,13 @@ const MapTabs: React.FC = () => {
     <div className="tabs-container w-full text-center my-5">
       <div className="tabs flex justify-center mb-5">
         <button
-          className={`tab px-5 py-2 mx-2 border-2 cursor-pointer transition-colors duration-300 ${activeTab === 'wedding' ? 'bg-[#A0A48E] text-white' : 'bg-white text-[#545748]'}`}
+          className={`tab px-5 py-2 mx-2 border-2 cursor-pointer transition-colors duration-300 ${activeTab === 'wedding' ? 'bg-[#7d9b76] text-white' : 'bg-white text-[#545748]'}`}
           onClick={() => setActiveTab('wedding')}
         >
           {t('sections.Wedding')}
         </button>
         <button
-          className={`tab px-5 py-2 mx-2 border-2 cursor-pointer transition-colors duration-300 ${activeTab === 'party' ? 'bg-[#A0A48E] text-white' : 'bg-white text-[#545748]'}`}
+          className={`tab px-5 py-2 mx-2 border-2 cursor-pointer transition-colors duration-300 ${activeTab === 'party' ? 'bg-[#7d9b76] text-white' : 'bg-white text-[#545748]'}`}
           onClick={() => setActiveTab('party')}
         >
           {t('sections.Party')}

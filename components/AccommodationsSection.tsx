@@ -19,17 +19,16 @@ const AccommodationsSection = () => {
                         className="h-auto object-contain mb-[14px]"
                     />
                     <h2
-                        style={marcellus.style}
-                        className="text-[23px] md:text-[32px] font-normal md:leading-[50.16px] text-center mb-8">
+                        className="font-tanpearl text-[23px] md:text-[32px] font-normal md:leading-[50.16px] text-center mb-8">
                         {t('sections.Accommodations')}
                     </h2>
                     <div className="text-content flex flex-col gap-6 max-w-3xl">
-                        <p className="text-lg mb-4">
+                        <p className="text-lg mb-4" style={marcellus.style}>
                             {t('sections.accommodationsText')}
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
                             <div className="bg-white p-6 rounded-lg shadow-md">
-                                <h3 className="text-xl font-semibold mb-4 text-[#2E5A27]">Polanco</h3>
+                                <h3 className="text-xl font-semibold mb-4 text-[#7D9B76]">Polanco</h3>
                                 <ul className="space-y-2">
                                     <li>• Las Alcobas</li>
                                     <li>• JW Marriott</li>
@@ -37,7 +36,7 @@ const AccommodationsSection = () => {
                                 </ul>
                             </div>
                             <div className="bg-white p-6 rounded-lg shadow-md">
-                                <h3 className="text-xl font-semibold mb-4 text-[#2E5A27]">Reforma</h3>
+                                <h3 className="text-xl font-semibold mb-4 text-[#7D9B76]">Reforma</h3>
                                 <ul className="space-y-2">
                                     <li>• Four Seasons</li>
                                     <li>• Sheraton María Isabel</li>
@@ -45,7 +44,7 @@ const AccommodationsSection = () => {
                                 </ul>
                             </div>
                             <div className="bg-white p-6 rounded-lg shadow-md">
-                                <h3 className="text-xl font-semibold mb-4 text-[#2E5A27]">Roma</h3>
+                                <h3 className="text-xl font-semibold mb-4 text-[#7D9B76]">Roma</h3>
                                 <ul className="space-y-2">
                                     <li>• Hotel Condesa DF</li>
                                     <li>• Hotel Brick</li>
@@ -53,7 +52,7 @@ const AccommodationsSection = () => {
                                 </ul>
                             </div>
                             <div className="bg-white p-6 rounded-lg shadow-md">
-                                <h3 className="text-xl font-semibold mb-4 text-[#2E5A27]">Condesa</h3>
+                                <h3 className="text-xl font-semibold mb-4 text-[#7D9B76]">Condesa</h3>
                                 <ul className="space-y-2">
                                     <li>• Condesa DF</li>
                                     <li>• Hippodrome Hotel</li>
