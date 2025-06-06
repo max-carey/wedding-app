@@ -43,15 +43,24 @@ export const WeddingEmail = ({
 
   return (
     <Html>
-      <Head />
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Marcellus&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.cdnfonts.com/css/tan-pearl"
+          rel="stylesheet"
+        />
+      </Head>
       <Preview>{previewText}</Preview>
       <Body style={main}>
         <Container style={container}>
           <Section style={header}>
             <Img
-              src="https://www.bodalilimax.com/email-assets/logo-white.png"
-              width="120"
-              height="120"
+              src="https://www.bodalilimax.com/email-assets/logo_white.png"
+              width="220"
+              height="220"
               alt="Wedding Logo"
               style={logo}
             />
@@ -185,7 +194,7 @@ export default WeddingEmail;
 const main = {
   backgroundColor: '#F6F6E9',
   fontFamily:
-    '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif',
+    'Georgia, "Times New Roman", Times, serif',
 };
 
 const container = {
@@ -215,6 +224,7 @@ const heading = {
   fontWeight: '400',
   color: '#484848',
   padding: '17px 0 0',
+  fontFamily: 'Georgia, "Times New Roman", Times, serif',
 };
 
 const subheading = {
@@ -224,6 +234,7 @@ const subheading = {
   fontWeight: '400',
   color: '#484848',
   padding: '17px 0 0',
+  fontFamily: 'Georgia, "Times New Roman", Times, serif',
 };
 
 const paragraph = {
@@ -231,6 +242,7 @@ const paragraph = {
   fontSize: '16px',
   lineHeight: '24px',
   color: '#484848',
+  fontFamily: 'Georgia, "Times New Roman", Times, serif',
 };
 
 const detailsSection = {
@@ -246,6 +258,7 @@ const detailText = {
   fontSize: '16px',
   lineHeight: '24px',
   color: '#484848',
+  fontFamily: 'Georgia, "Times New Roman", Times, serif',
 };
 
 const gallerySection = {
@@ -290,4 +303,5 @@ const footerText = {
   fontSize: '14px',
   lineHeight: '24px',
   color: '#8898aa',
+  fontFamily: 'Arial, Helvetica, sans-serif',
 }; 
