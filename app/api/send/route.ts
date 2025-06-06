@@ -25,7 +25,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
             const response = await resend.emails.send({
                 to: email,
                 cc: process.env.NEXT_PUBLIC_LILI_EMAIL,
-                from: 'onboarding@resend.dev',
+                from: 'hola@email.bodamaxlili.com',
                 subject: 'Boda de Lili y Max, 14 de Febrero del 2026 - Bienvenido/Welcome! 🎉',
                 react: EmailTemplate({ firstName: name, lastName: surname, email: email}),
                 text: ``,
