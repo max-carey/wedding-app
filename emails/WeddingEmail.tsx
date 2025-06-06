@@ -49,9 +49,9 @@ export const WeddingEmail = ({
         <Container style={container}>
           <Section style={header}>
             <Img
-              src="https://www.bodalilimax.com/email-assets/logo.png"
-              width="40"
-              height="40"
+              src="https://www.bodalilimax.com/email-assets/logo-white.png"
+              width="120"
+              height="120"
               alt="Wedding Logo"
               style={logo}
             />
