@@ -1,6 +1,6 @@
 import { Resend } from 'resend';
-import {EmailTemplate} from "@/components/email-template";
-import {NextRequest, NextResponse} from "next/server";
+import WeddingEmail from '@/emails/WeddingEmail';
+import { NextRequest, NextResponse } from "next/server";
 
 // Only initialize Resend if we have an API key
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
@@ -27,8 +27,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
                 cc: process.env.NEXT_PUBLIC_LILI_EMAIL,
                 from: 'hola@email.bodalilimax.com',
                 subject: 'Boda de Lili y Max, 14 de Febrero del 2026 - Bienvenido/Welcome! 🎉',
-                react: EmailTemplate({ firstName: name, lastName: surname, email: email}),
-                text: ``,
+                react: WeddingEmail({ firstName: name, lastName: surname, email: email }),
             });
             console.log('Email sent successfully:', response);
             return NextResponse.json({ 
