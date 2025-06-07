@@ -1,5 +1,6 @@
 import { Resend } from 'resend';
 import WeddingEmail from '@/emails/WeddingEmail';
+import WeddingEmailDecline from '@/emails/WeddingEmailDecline';
 import { NextRequest, NextResponse } from "next/server";
 
 // Only initialize Resend if we have an API key
@@ -8,8 +9,8 @@ const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KE
 export async function POST(req: NextRequest, res: NextResponse) {
     if (req.method === 'POST') {
         const body = await req.json();
-        const { name, surname, email } = body;
-        console.log('Received RSVP from:', name, surname, email);
+        const { name, surname, email, assistance } = body;
+        console.log('Received RSVP from:', name, surname, email, 'Assistance:', assistance);
 
         // If we're in development or don't have an API key, just log and return success
         if (!resend) {
@@ -22,12 +23,17 @@ export async function POST(req: NextRequest, res: NextResponse) {
         }
 
         try {
+            const emailTemplate = assistance === 'true' ? WeddingEmail : WeddingEmailDecline;
+            const emailSubject = assistance === 'true' 
+                ? 'Boda de Lili y Max, 14 de Febrero del 2026 - Bienvenido/Welcome! 🎉'
+                : 'Boda de Lili y Max, 14 de Febrero del 2026 - Gracias por tu respuesta/Thank you for your response';
+
             const response = await resend.emails.send({
                 to: email,
                 cc: process.env.NEXT_PUBLIC_LILI_EMAIL,
                 from: 'hola@email.bodalilimax.com',
-                subject: 'Boda de Lili y Max, 14 de Febrero del 2026 - Bienvenido/Welcome! 🎉',
-                react: WeddingEmail({ firstName: name, lastName: surname, email: email }),
+                subject: emailSubject,
+                react: emailTemplate({ firstName: name, lastName: surname, email: email }),
             });
             console.log('Email sent successfully:', response);
             return NextResponse.json({ 
