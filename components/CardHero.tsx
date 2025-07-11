@@ -26,13 +26,7 @@ const CardHero = () => {
                 <p className="subtitle text-accent font-tanpearl  text-sm">{t('hero')}</p>
                 <h1
                     className="font-tanpearl font-medium text-4xl sm:text-5xl">Lili <span className="font-parfumerieScript text-[90px]"> & </span> Max</h1>
-                <Image
-                    src={divider}
-                    alt="Subtitle"
-                    width={100}
-                    height={0}
-                    className="object-contain h-auto"
-                />
+                
                 <Countdown targetDate="2026-02-14T00:00:00" />
             </div>
         </div>
