@@ -22,8 +22,8 @@ const timelineEvents: DayEvents[] = [
         date: "Friday, February 13th, 2026",
         events: [
             {
-                time: "6:00 PM",
-                title: "Welcome Dinner",
+                time: "6:00 PM - 9:00 PM",
+                title: "Welcome Cocktail Party",
                 description: "Details to be confirmed"
             }
         ]
@@ -32,25 +32,21 @@ const timelineEvents: DayEvents[] = [
         date: "Saturday, February 14th, 2026",
         events: [
             {
-                time: "5:00 PM - 6:00 PM",
+                time: "4:00 PM - 5:00 PM",
                 title: "Ceremony",
                 description: "Wedding ceremony at the main venue"
             },
             {
-                time: "6:00 PM - 7:00 PM",
+                time: "5:00 PM - 6:00 PM",
                 title: "Cocktail Hour",
                 description: "Drinks and light appetizers"
             },
             {
-                time: "7:00 PM - 9:00 PM",
-                title: "Live Music",
-                description: "Enjoy live entertainment"
+                time: "6:00 PM",
+                title: "Dinner",
+                description: "Eat food"
             },
-            {
-                time: "9:00 PM - 2:00 AM",
-                title: "Party",
-                description: "Dancing and celebration"
-            }
+            
         ]
     }
 ];
@@ -83,13 +79,46 @@ export default function ItinerarySection() {
                                     {day.date}
                                 </h3>
                                 {day.events.map((event, eventIndex) => (
-                                    <div key={eventIndex} className="timeline-item flex items-start mb-8 relative">
-                                        <div className="timeline-time w-32 flex-shrink-0 text-right pr-6 font-semibold">
-                                            {event.time}
-                                        </div>
-                                        <div className="timeline-content flex-grow pl-6 border-l-2 border-amber-200">
-                                            <h3 className="text-xl font-semibold mb-2">{event.title}</h3>
-                                            <p className="text-gray-600">{event.description}</p>
+                                    <div key={eventIndex} className="timeline-item flex justify-center mb-8 relative w-full max-w-2xl mx-auto">
+                                        {/* 3-column layout: time | line | content */}
+                                        <div className="flex w-full">
+                                            {/* Time (left) */}
+                                            <div className="flex-1 flex justify-end pr-6 items-center">
+                                                <div className="font-semibold text-right">
+                                                    <div className="hidden md:block whitespace-nowrap">
+                                                        {event.time}
+                                                    </div>
+                                                    <div className="md:hidden flex flex-col items-end">
+                                                        {event.time.includes(' - ')
+                                                            ? event.time.split(' - ').map((time, index) => (
+                                                                <div key={index} className="text-sm leading-tight">
+                                                                    {time}
+                                                                </div>
+                                                            ))
+                                                            : event.time.includes('-')
+                                                                ? event.time.split('-').map((time, index) => (
+                                                                    <div key={index} className="text-sm leading-tight">
+                                                                        {time.trim()}
+                                                                    </div>
+                                                                ))
+                                                                : [event.time].map((time, index) => (
+                                                                    <div key={index} className="text-sm leading-tight">
+                                                                        {time}
+                                                                    </div>
+                                                                ))
+                                                        }
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/* Vertical line (center) */}
+                                            <div className="flex flex-col items-center">
+                                                <div className="w-0.5 bg-amber-200 h-full min-h-[48px] mx-4"></div>
+                                            </div>
+                                            {/* Content (right) */}
+                                            <div className="flex-1 flex flex-col justify-center pl-6">
+                                                <h3 className="text-xl font-semibold mb-2 text-left">{event.title}</h3>
+                                                <p className="text-gray-600 text-left">{event.description}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 ))}

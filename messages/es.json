@@ -160,8 +160,8 @@
   },
   "AboutUs": {
     "title": "Sobre Nosotros",
-    "sectionTitle": "Sobre Nosotros",
-    "description": "Una joven prieguense y un sayagués,\ncruzaron sus caminos en un destino lejano.\nLo que empezó como amistad sincera,\nse transformó en amor, una pasión verdadera.\n\nPara crecer juntos, un sueño abrazaron,\ny hacia Irlanda juntos marcharon.\nComo guiris en Mallorca, bajo estrellas en calma,\nen Cala Mendia eligieron compartir su amor para el resto de sus vidas."
+    "sectionTitle": "Sobre Nosotros", 
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\nSed do eiusmod tempor incididunt ut labore et dolore.\nMagna aliqua ut enim ad minim veniam,\nquis nostrud exercitation ullamco laboris nisi.\n\nUt aliquip ex ea commodo consequat,\nduis aute irure dolor in reprehenderit.\nVoluptate velit esse cillum dolore eu fugiat,\nnulla pariatur excepteur sint occaecat cupidatat non proident."
   },
   "Countdown": {
   "days": "DÍA(S)",

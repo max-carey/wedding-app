@@ -28,7 +28,7 @@
       "Locations": "Locations",
       "RSVP": "RSVP",
       "Wedding": "Wedding Event",
-      "Party": "Party Event",
+      "Party": "Welcome Cocktail Party",
       "Accommodations": "Accommodations",
       "DressCode": "Dress Code",
       "dressCodeTitle": "Semi-Formal Attire",
@@ -157,12 +157,12 @@
     "copyright": "© 2024 Tu App. Todos los derechos reservados"
   },
   "CardHero": {
-    "hero": "Join us at our wedding"
+    "hero": "Please join us in Mexico City for our wedding!"
   },
   "AboutUs": {
     "title": "About us",
-    "sectionTitle": "About us",
-    "description": "A young woman from Priego and a Sayagués lad,\n crossed paths in a distant land.\n What began as a sincere friendship,\n transformed into love, a true passion.\n\n To grow together, they embraced a dream,\n and to Ireland, their lives they did stream.\n Like tourists in Mallorca, under a calm starry sky,\n in Cala Mendia, they chose to share their love for the rest of their lives."
+    "sectionTitle": "About us", 
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   "MapTabs": {
     "WeddingEvent": "Wedding Event",

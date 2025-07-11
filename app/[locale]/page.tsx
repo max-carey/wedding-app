@@ -56,24 +56,7 @@ export default function Home() {
 
             <section id="greeting" className="container flex flex-col justify-center items-center py-3 px-5 md:mt-[180px]" >
                 <div className="container-wide w-full max-w-[1200px] flex flex-col items-center">
-                    <div className="guest-form-content w-full text-center flex flex-col items-center gap-6 relative">
-                        <Image
-                            src={rama}
-                            width={80}
-                            height={0}
-                            alt="Rama"
-                            className="h-auto object-contain mb-[14px]"
-                        />
-                        <div className="text-content flex flex-col gap-6">
-                            <h2
-                                
-                                className="font-tanpearl text-[23px] md:text-[28px] font-normal md:leading-[50.16px] text-center">
-                                {t('sections.grettingText')}
-                            </h2>
-                            <p className="font-tanpearl">{t('sections.locationsText1')}</p>
-                        </div>
-                        <Gretting />
-                    </div>
+                    
                 </div>
             </section>
 
