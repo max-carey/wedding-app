@@ -42,11 +42,25 @@ const timelineEvents: DayEvents[] = [
                 description: "Drinks and light appetizers"
             },
             {
-                time: "6:00 PM",
-                title: "Dinner",
-                description: "Eat food"
+                time: "6:00 PM - 8:00 PM",
+                title: "Dinner and Live Music",
+                description: "Delicious Mexican food"
             },
-            
+            {
+                time: "8:00 PM - 12:00 AM",
+                title: "Dancing",
+                description: "Dance the night away"
+            },
+            {
+                time: "12:00 AM - 1:00 AM",
+                title: "Midnight Munchies",
+                description: "Late night food"
+            },
+            {
+                time: "1:00 AM - 2:00 AM",
+                title: "After Party",
+                description: "After party onsite"
+            }
         ]
     }
 ];

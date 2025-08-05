@@ -27,8 +27,8 @@
       "Party": "Fiesta",
       "Accommodations": "Alojamiento",
       "DressCode": "Código de Vestimenta",
-      "dressCodeTitle": "Etiqueta Semi-Formal",
-      "dressCodeDescription": "Amablemente solicitamos a nuestros invitados vestir de etiqueta semi-formal. Para los caballeros, esto significa trajes (no es necesario smoking). Para las damas, vestidos de coctel o conjuntos elegantes son perfectos. Queremos que todos se sientan cómodos mientras se ven lo mejor posible en nuestro día especial.",
+      "dressCodeTitle": "Etiqueta Formal",
+      "dressCodeDescription": "Damas:\nVestido formal (midi/maxi) o traje elegante\nColores sólidos brillantes (preferentemente)\nPor favor no usar blanco o colores similares\nZapatos de vestir\n\nCaballeros:\nTraje (corbata opcional, no se requiere smoking)\nCamisa de vestir\nZapatos de vestir",
       "accommodationsText": "El lugar de la boda está ubicado en el centro de la Ciudad de México (el centro). Recomendamos hospedarse en los barrios de Polanco, Reforma, Roma o Condesa. Aquí hay algunas recomendaciones de hoteles para cada área:",
       "accommodationsHelp": "¡No dudes en contactarnos si necesitas ayuda con el alojamiento o tienes alguna pregunta!"
     },
@@ -153,7 +153,7 @@
     "copyright": "© 2024 Your App. All rights reserved."
   },
   "CardHero": {
-    "hero": "Acompáñanos en nuestra boda"
+    "hero": "Acompáñanos en nuestra boda el 14 de febrero del 2026 en la Ciudad de México"
   },
   "Gretting": {
     "Gretting": "Please confirm attendance"

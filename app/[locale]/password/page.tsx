@@ -18,7 +18,7 @@ export default function PasswordPage() {
     setError('');
     
     // Replace this with your actual password
-    const correctPassword = process.env.NEXT_PUBLIC_WEDDING_PASSWORD || 'bocol';
+    const correctPassword = process.env.NEXT_PUBLIC_WEDDING_PASSWORD || 'mezcal';
     
     if (password === correctPassword) {
       // Set authentication cookie (expires in 1 year)

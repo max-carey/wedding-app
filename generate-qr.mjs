@@ -2,7 +2,7 @@ import QRCode from 'qrcode';
 import { writeFile } from 'fs/promises';
 
 // The URL to encode in the QR code
-const url = 'https://bodalilimax.com';
+const url = 'https://crazylocofiesta.com';
 
 // Options for the QR code
 const options = {
