@@ -30,7 +30,30 @@
       "dressCodeTitle": "Etiqueta Formal",
       "dressCodeDescription": "Damas:\nVestido formal (midi/maxi) o traje elegante\nColores sólidos brillantes (preferentemente)\nPor favor no usar blanco o colores similares\nZapatos de vestir\n\nCaballeros:\nTraje (corbata opcional, no se requiere smoking)\nCamisa de vestir\nZapatos de vestir",
       "accommodationsText": "El lugar de la boda está ubicado en el centro de la Ciudad de México (el centro). Recomendamos hospedarse en los barrios de Polanco, Reforma, Roma o Condesa. Aquí hay algunas recomendaciones de hoteles para cada área:",
-      "accommodationsHelp": "¡No dudes en contactarnos si necesitas ayuda con el alojamiento o tienes alguna pregunta!"
+      "accommodationsHelp": "¡No dudes en contactarnos si necesitas ayuda con el alojamiento o tienes alguna pregunta!",
+      "accommodationsHelp2": "La Condesa es un barrio vibrante y moderno, conocido por sus calles con árboles, arquitectura Art Deco y su vibrante escena cultural. Ofrece una mezcla de cafés, restaurantes, boutiques y parques como Parque México y Parque España.",
+      "accommodationsHelp3": "La Roma es uno de los barrios más icónicos y culturalmente rico, conocido por su hermosa arquitectura de principios del siglo XX, galerías de arte, librerías indie y su vibrante escena gastronómica, que combina el encanto histórico con un espíritu moderno y bohemio.",
+      "accommodationsHelp4": "Polanco es un barrio cosmopolita y de lujo, conocido por su shopping de lujo, restaurantes de alta gama y áreas residenciales elegantes. A menudo comparado con Beverly Hills, es hogar del Avenida Presidente Masaryk, la calle de compras más exclusiva de la ciudad, así como restaurantes y instituciones culturales como el Museo Soumaya y el Museo Jumex.",
+      "accommodationsHelp5": "Paseo de la Reforma es la avenida más icónica, que se extiende desde el centro de la ciudad hasta las zonas occidentales. Inspirada en las grandes avenidas europeas, está llena de monumentos, rascacielos, museos y arte público. Los principales landmarks incluyen el Ángel de la Independencia, Diana la Cazadora y el Parque Chapultepec.",
+      "dressCodeSection": {
+        "ladies": {
+          "title": "Damas:",
+          "dress": "Vestido formal (midi/maxi) o traje elegante",
+          "colors": "Colores sólidos brillantes (preferentemente)",
+          "noWhite": "Por favor no usar blanco o colores similares",
+          "dressShoes": "Zapatos de vestir"
+        },
+        "gentlemen": {
+          "title": "Caballeros:",
+          "suit": "Traje (corbata opcional, no se requiere smoking)",
+          "shirt": "Camisa de vestir",
+          "dressShoes": "Zapatos de vestir"
+        }
+      },
+      "giftGuide": {
+        "title": "Guía de Regalos",
+        "description": "Con todo lo que tenemos, estamos realmente bendecidos, tu presencia es lo que solicitamos, pero si deseas regalar, sin embargo, el regalo monetario es el que sugerimos."
+      }
     },
     "form": {
       "warning": "Esperamos verte en nuestra boda. Recibirás un correo electrónico con los detalles de la boda, por favor revisa el",
@@ -161,7 +184,11 @@
   "AboutUs": {
     "title": "Sobre Nosotros",
     "sectionTitle": "Sobre Nosotros", 
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\nSed do eiusmod tempor incididunt ut labore et dolore.\nMagna aliqua ut enim ad minim veniam,\nquis nostrud exercitation ullamco laboris nisi.\n\nUt aliquip ex ea commodo consequat,\nduis aute irure dolor in reprehenderit.\nVoluptate velit esse cillum dolore eu fugiat,\nnulla pariatur excepteur sint occaecat cupidatat non proident."
+    "description-one": "Nuestra historia comenzó en 2022 como un desliz, literalmente. Nos conocimos a través de Bumble y tuvimos nuestra primera cita en el corazón de Coyoacán, en la Ciudad de México. Nuestros caminos se cruzaron inesperadamente… y hemos sido inseparables desde entonces.",
+    "description-two": "Después de tres años juntos—llenos de aventuras, risas, crecimiento y amor— y durante un mágico viaje a Japón en Abril de 2025, Max se propusó en la pacífica ciudad de Beppu. Éramos sólo nosotros dos y un perfecto “sí”.",
+    "description-three": "Esta página es para compartir todos los detalles sobre nuestro gran día.",
+    "description-four": "Estamos muy agradecidos por el amor y el apoyo que hemos recibido por parte de nuestros amigos y familia. Esta boda no es sólo sobre nosotros, sino sobre todas las personas que han sido parte de nuestro camino.",
+    "description-five": "¡No podemos esperar a celebrar con ustedes!"
   },
   "Countdown": {
   "days": "DÍA(S)",

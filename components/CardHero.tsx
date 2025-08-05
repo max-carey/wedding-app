@@ -16,7 +16,7 @@ const CardHero = () => {
             className="relative bottom-[100px] md:bottom-[-250px] sm:absolute w-[92%] sm:w-[70%] max-w-[600px] z-20">
             <div
                 className="relative z-20 bg-white text-center flex flex-col justify-center items-center gap-4 p-[25px_8%] sm:p-[30px_8%]">
-                <p className="subtitle text-accent font-tanpearl  text-sm">{t('hero')}</p>
+                <p className="subtitle text-accent font-tanpearl  text-sm" dangerouslySetInnerHTML={{ __html: t('hero') }} />
                 <h1
                     className="font-tanpearl font-medium text-4xl sm:text-5xl">Lili <span className="font-parfumerieScript text-[90px]"> & </span> Max</h1>
                 

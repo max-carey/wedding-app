@@ -34,7 +34,30 @@
       "dressCodeTitle": "Formal Attire",
       "dressCodeDescription": "Ladies:\nFormal dress (midi/maxi) or elegant pantsuit\nSolid bright colors (preferred)\nPlease no white or similar\nDress shoes\n\nGentleman:\nSuit (tie optional, no tuxedos required)\nDress shirt\nDress shoes",
       "accommodationsText": "The wedding venue is located in downtown Mexico City (el centro). We recommend staying in Polanco, Reforma, Roma, or Condesa neighborhoods. Here are some hotel recommendations for each area:",
-      "accommodationsHelp": "Feel free to reach out to us if you need help with accommodations or have any questions!"
+      "accommodationsHelp": "Feel free to reach out to us if you need help with accommodations or have any questions!",
+      "accommodationsHelp2": "La Condesa is a vibrant and trendy neighborhood, known for its tree-lined streets, Art Deco architecture, and lively cultural scene. It offers a mix of stylish cafes, restaurants, boutiques and parks like Parque México and Parque España. ",
+      "accommodationsHelp3": "La Roma is one of most iconic and culturally rich neighborhoods, known for its beautiful early 20th-century architecture, art galleries, indie bookstores, and vibrant food scene, it blends historic charm with a modern, bohemian spirit.",
+      "accommodationsHelp4": "Polanco is an upscale and cosmopolitan neighborhood, known for its luxury shopping, fine dining, and elegant residential areas. Often compared to Beverly Hills, it’s home to Presidente Masaryk Avenue, the city's most exclusive shopping street, as well as world-renowned restaurants and cultural institutions like the Soumaya Museum and Museo Jumex.",
+      "accommodationsHelp5": "Paseo de la Reforma is the most iconic avenue, stretching from the city center to the western neighborhoods. Inspired by the great boulevards of Europe, it’s lined with monuments, skyscrapers, museums, and public art. Key landmarks include the Angel of Independence, Diana the Huntress, and Chapultepec Park.",
+      "dressCodeSection": {
+        "ladies": {
+          "title": "Ladies:",
+          "dress": "Formal dress (midi/maxi) or elegant pantsuit",
+          "colors": "Solid bright colors (preferred)",
+          "noWhite": "Please no white or similar",
+          "dressShoes": "Dress shoes"
+        },
+        "gentlemen": {
+          "title": "Gentlemen:",
+          "suit": "Suit (tie optional, no tuxedos required)",
+          "shirt": "Dress shirt",
+          "dressShoes": "Dress shoes"
+        }
+      },
+      "giftGuide": {
+        "title": "Gift Guide",
+        "description": "With all that we have, we are truly blessed, your presence is that we request, but if you desire to give, nonetheless, monetary gift is the one we suggest."
+      }
     },
     "form": {
       "warning": "We hope to see you at our wedding. You will receive an email with the wedding details, please check the",
@@ -157,12 +180,16 @@
     "copyright": "© 2024 Tu App. Todos los derechos reservados"
   },
   "CardHero": {
-    "hero": "Please join us in Mexico City for our wedding on February 14th, 2026"
+    "hero": "Please join us in Mexico City for our wedding on <br/> 14th February 2026"
   },
   "AboutUs": {
     "title": "About us",
     "sectionTitle": "About us", 
-    "description": "Our story began in 2022 with a swipe — literally. We met through Bumble and had our first date at the heart of Coyoacan, in Mexico City. Our two paths crossed unexpectedly... and we've been inseparable ever since.\n\nAfter 3 years together—full of adventures, laughter, growth and love—and during a magical trip to Japan in 2025, Max proposed in the peaceful town of Beppu. It was just the two of us... and a perfect \"yes\".\n\nThis website is here to share all the important details about our big day.\n\nWe're so grateful for the love and support we've received from friends and family. This wedding is not just about us, but about all the people who have been part of our journey.\n\nWe can't wait to celebrate with you!"
+    "description-one": "Our story began in 2022 with a swipe — literally. We met through Bumble and had our first date at the heart of Coyoacan, in Mexico City. Our two paths crossed unexpectedly… and we’ve been inseparable ever since.",
+    "description-two": "After 3 years together—full of adventures, laughter, growth and love— and during a magical trip to Japan in April 2025, Max proposed in the peaceful town of Beppu. It was just the two of us… and a perfect “yes”.",
+    "description-three": "This website is here to share all the important details about our big day.",
+    "description-four": "We’re so grateful for the love and support we’ve received from friends and family. This wedding is not just about us, but about all the people who have been part of our journey.",
+    "description-five": "We can’t wait to celebrate with you!"
   },
   "MapTabs": {
     "WeddingEvent": "Wedding Event",

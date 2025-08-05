@@ -17,6 +17,7 @@ import SectionsContent from "@/components/SectionsContent";
 import ItinerarySection from "@/components/ItinerarySection";
 import AccommodationsSection from "@/components/AccommodationsSection";
 import DressCodeSection from "@/components/DressCodeSection";
+import GiftGuide from "@/components/GiftGuide";
 
 export default function Home() {
     const t = useTranslations('IndexPage');
@@ -149,6 +150,8 @@ export default function Home() {
             <AccommodationsSection />
 
             <DressCodeSection />
+
+            <GiftGuide />
 
             <section id="guestFormFormik" className="container-full section-styles">
                 <div className="content-section flex flex-col items-center justify-start gap-8">

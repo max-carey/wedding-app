@@ -21,9 +21,23 @@ const PostcardBlockRight = () => {
                     className="font-tanpearl text-[23px] md:text-[32px] font-normal md:leading-[50.16px] text-center">
                     {t('sectionTitle')}
                 </h2>
-                <p className=" mt-4" style={marcellus.style}>
-                    {t('description')}
-                </p>
+                <div className="mt-4 text-justify" style={marcellus.style}>
+                    <div className='mb-4'>
+                    {t('description-one')}
+                    </div>
+                    <div className='mb-4'>
+                    {t('description-two')}
+                    </div>
+                    <div className='mb-4'>
+                    {t('description-three')}
+                    </div>
+                    <div className='mb-4'>
+                    {t('description-four')}
+                    </div>
+                    <div className='mb-4'>
+                    {t('description-five')}
+                    </div>
+                </div>
             </div>
         </div>
     );
