@@ -10,6 +10,7 @@ interface TimelineEvent {
     time: string;
     title: string;
     description: string;
+    link?: string;
 }
 
 interface DayEvents {
@@ -24,7 +25,8 @@ const timelineEvents: DayEvents[] = [
             {
                 time: "6:00 PM - 9:00 PM",
                 title: "Welcome Cocktail Party",
-                description: "Details to be confirmed"
+                description: "Details to be confirmed",
+                link: "https://share.google/ITCSr8blHVBpTe51f" // change link
             }
         ]
     },
@@ -34,12 +36,13 @@ const timelineEvents: DayEvents[] = [
             {
                 time: "4:00 PM - 5:00 PM",
                 title: "Ceremony",
-                description: "Wedding ceremony at the main venue"
+                description: "Wedding ceremony at the main venue",
+                link: "https://share.google/ITCSr8blHVBpTe51f"
             },
             {
                 time: "5:00 PM - 6:00 PM",
                 title: "Cocktail Hour",
-                description: "Drinks and light appetizers"
+                description: "Drinks and light appetizers",
             },
             {
                 time: "6:00 PM - 8:00 PM",
@@ -129,8 +132,8 @@ export default function ItinerarySection() {
                                                 <div className="w-0.5 bg-amber-200 h-full min-h-[48px] mx-4"></div>
                                             </div>
                                             {/* Content (right) */}
-                                            <div className="flex-1 flex flex-col justify-center pl-6">
-                                                <h3 className="text-xl font-semibold mb-2 text-left">{event.title}</h3>
+                                            <div className="flex-1 flex flex-col justify-center pl-6 cursor-pointer">
+                                                <h3 className="text-xl font-semibold mb-2 text-left"><a href={event.link} target="_blank" className="cursor-pointer hover:underline">{event.title}</a></h3>
                                                 <p className="text-gray-600 text-left">{event.description}</p>
                                             </div>
                                         </div>
