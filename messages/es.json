@@ -16,6 +16,7 @@
       "subtitle": "Confirma tu asistencia",
       "title": "ESPERAMOS VERTE ALLI",
       "descriptionForm": "Llena el formulario a continuación para confirmar tu asistencia a la boda.",
+      "descriptionForm2": "Debido a restricciones de espacio y capacidad, solo podemos acomodar a los invitados nombrados en tu invitación.",
       "Home": "Inicio",
       "Greeting": "Saludo",
       "AboutUs": "Sobre Nosotros",
@@ -29,22 +30,22 @@
       "DressCode": "Código de Vestimenta",
       "dressCodeTitle": "Etiqueta Formal",
       "dressCodeDescription": "Damas:\nVestido formal (midi/maxi) o traje elegante\nColores sólidos brillantes (preferentemente)\nPor favor no usar blanco o colores similares\nZapatos de vestir\n\nCaballeros:\nTraje (corbata opcional, no se requiere smoking)\nCamisa de vestir\nZapatos de vestir",
-      "accommodationsText": "El lugar de la boda está ubicado en el centro de la Ciudad de México (el centro). Recomendamos hospedarse en los barrios de Polanco, Reforma, Roma o Condesa. Aquí hay algunas recomendaciones de hoteles para cada área:",
+      "accommodationsText": "El lugar de la boda está ubicado en el centro de la Ciudad de México (el centro). Recomendamos hospedarse en los barrios de Roma, Condesa, Reforma, Polanco o Juárez. Aquí hay algunas recomendaciones de hoteles para cada área:",
       "accommodationsHelp": "¡No dudes en contactarnos si necesitas ayuda con el alojamiento o tienes alguna pregunta!",
-      "accommodationsHelp2": "La Condesa es un barrio vibrante y moderno, conocido por sus calles con árboles, arquitectura Art Deco y su vibrante escena cultural. Ofrece una mezcla de cafés, restaurantes, boutiques y parques como Parque México y Parque España.",
-      "accommodationsHelp3": "La Roma es uno de los barrios más icónicos y culturalmente rico, conocido por su hermosa arquitectura de principios del siglo XX, galerías de arte, librerías indie y su vibrante escena gastronómica, que combina el encanto histórico con un espíritu moderno y bohemio.",
-      "accommodationsHelp4": "Polanco es un barrio cosmopolita y de lujo, conocido por su shopping de lujo, restaurantes de alta gama y áreas residenciales elegantes. A menudo comparado con Beverly Hills, es hogar del Avenida Presidente Masaryk, la calle de compras más exclusiva de la ciudad, así como restaurantes y instituciones culturales como el Museo Soumaya y el Museo Jumex.",
-      "accommodationsHelp5": "Paseo de la Reforma es la avenida más icónica, que se extiende desde el centro de la ciudad hasta las zonas occidentales. Inspirada en las grandes avenidas europeas, está llena de monumentos, rascacielos, museos y arte público. Los principales landmarks incluyen el Ángel de la Independencia, Diana la Cazadora y el Parque Chapultepec.",
+      "accommodationsHelp3": "La Condesa es un barrio vibrante y moderno, conocido por sus calles con árboles, arquitectura Art Deco y su vibrante escena cultural. Ofrece una mezcla de cafés, restaurantes, boutiques y parques como Parque México y Parque España.",
+      "accommodationsHelp2": "La Roma es uno de los barrios más icónicos y culturalmente rico, conocido por su hermosa arquitectura de principios del siglo XX, galerías de arte, librerías indie y su vibrante escena gastronómica, que combina el encanto histórico con un espíritu moderno y bohemio.",
+      "accommodationsHelp5": "Polanco es un barrio cosmopolita y de lujo, conocido por su shopping de lujo, restaurantes de alta gama y áreas residenciales elegantes. A menudo comparado con Beverly Hills, es hogar del Avenida Presidente Masaryk, la calle de compras más exclusiva de la ciudad, así como restaurantes y instituciones culturales como el Museo Soumaya y el Museo Jumex.",
+      "accommodationsHelp4": "Paseo de la Reforma es la avenida más icónica, que se extiende desde el centro de la ciudad hasta las zonas occidentales. Inspirada en las grandes avenidas europeas, está llena de monumentos, rascacielos, museos y arte público. Los principales landmarks incluyen el Ángel de la Independencia, Diana la Cazadora y el Parque Chapultepec.",
       "dressCodeSection": {
         "ladies": {
-          "title": "Damas:",
+          "title": "Damas",
           "dress": "Vestido formal (midi/maxi) o traje elegante",
           "colors": "Colores sólidos brillantes (preferentemente)",
           "noWhite": "Por favor no usar blanco o colores similares",
           "dressShoes": "Zapatos de vestir"
         },
         "gentlemen": {
-          "title": "Caballeros:",
+          "title": "Caballeros",
           "suit": "Traje (corbata opcional, no se requiere smoking)",
           "shirt": "Camisa de vestir",
           "dressShoes": "Zapatos de vestir"
@@ -121,7 +122,7 @@
         }
       },
       "CommentsSection": {
-        "title": "¿Algún Comentario?",
+        "title": "¿Algún Comentario? Dinos si tienes alguna alergia o si eres vegetariano.",
         "commentsInput": {
           "label": "Comentarios Adicionales",
           "placeholder": "Siéntete libre de agregar cualquier comentario adicional que te gustaría que se considerara"

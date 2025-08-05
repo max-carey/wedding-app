@@ -28,22 +28,22 @@ const DressCodeSection = () => {
                         <h3 className="text-xl font-semibold text-[#7D9B76]" style={marcellus.style}>
                             {t('sections.dressCodeTitle')}
                         </h3>
-                        <div className="text-lg text-left grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10" style={marcellus.style} >
+                        <div className="text-lg text-left grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10" >
                             <div className='flex flex-col items-center'>
                                 <ul>
                                     <li className='mb-4 font-bold text-center'>
                                         {t('sections.dressCodeSection.ladies.title')}
                                     </li>
-                                    <li className='mb-3 list-disc'>
+                                    <li className='mb-3 text-center'>
                                         {t('sections.dressCodeSection.ladies.dress')}
                                     </li>
-                                    <li className='mb-3 list-disc'>
+                                    <li className='mb-3 text-center'>
                                         {t('sections.dressCodeSection.ladies.colors')}
                                     </li>
-                                    <li className='mb-3 list-disc'>
+                                    <li className='mb-3 text-center'>
                                         {t('sections.dressCodeSection.ladies.noWhite')}
                                     </li>
-                                    <li className='mb-3 list-disc'>
+                                    <li className='mb-3 text-center'>
                                         {t('sections.dressCodeSection.ladies.dressShoes')}
                                     </li>
                                 </ul>
@@ -53,13 +53,13 @@ const DressCodeSection = () => {
                                     <li className='mb-4 font-bold text-center'>
                                         {t('sections.dressCodeSection.gentlemen.title')}
                                     </li>
-                                    <li className='mb-3 list-disc'>
+                                    <li className='mb-3 text-center'>
                                     {t('sections.dressCodeSection.gentlemen.suit')}
                                     </li>
-                                    <li className='mb-3 list-disc'>
+                                    <li className='mb-3 text-center'>
                                         {t('sections.dressCodeSection.gentlemen.shirt')}
                                     </li>
-                                    <li className='mb-3 list-disc'>
+                                    <li className='mb-3 text-center'>
                                     {t('sections.dressCodeSection.gentlemen.dressShoes')}
                                     </li>
                                 </ul>

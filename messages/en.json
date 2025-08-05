@@ -19,7 +19,8 @@
       "galleryText": "Each photo tells a part of our story, from the simplest moments to the most extraordinary. We feel fortunate to have shared so many memories together and are excited to create many more in the future.",
       "subtitle": "Confirm Your Assistance",
       "title": "WE HOPE TO SEE YOU THERE",
-      "descriptionForm":"Fill the form below to confirm your assistance to the wedding.",
+      "descriptionForm":"Fill the form below to confirm your assistance to the wedding. ",
+      "descriptionForm2":"Due to space and capacity restrictions, we can only accommodate the guest named on your invitation. ",
       "Home": "Home",
       "Greeting": "Greeting",
       "AboutUs": "About Us",
@@ -33,22 +34,22 @@
       "DressCode": "Dress Code",
       "dressCodeTitle": "Formal Attire",
       "dressCodeDescription": "Ladies:\nFormal dress (midi/maxi) or elegant pantsuit\nSolid bright colors (preferred)\nPlease no white or similar\nDress shoes\n\nGentleman:\nSuit (tie optional, no tuxedos required)\nDress shirt\nDress shoes",
-      "accommodationsText": "The wedding venue is located in downtown Mexico City (el centro). We recommend staying in Polanco, Reforma, Roma, or Condesa neighborhoods. Here are some hotel recommendations for each area:",
+      "accommodationsText": "The wedding venue is located in downtown Mexico City (el centro). We recommend staying in Roma, Condesa, Reforma, Polanco or Juarez neighborhoods. Here are some hotel recommendations for each area:",
       "accommodationsHelp": "Feel free to reach out to us if you need help with accommodations or have any questions!",
-      "accommodationsHelp2": "La Condesa is a vibrant and trendy neighborhood, known for its tree-lined streets, Art Deco architecture, and lively cultural scene. It offers a mix of stylish cafes, restaurants, boutiques and parks like Parque México and Parque España. ",
-      "accommodationsHelp3": "La Roma is one of most iconic and culturally rich neighborhoods, known for its beautiful early 20th-century architecture, art galleries, indie bookstores, and vibrant food scene, it blends historic charm with a modern, bohemian spirit.",
-      "accommodationsHelp4": "Polanco is an upscale and cosmopolitan neighborhood, known for its luxury shopping, fine dining, and elegant residential areas. Often compared to Beverly Hills, it’s home to Presidente Masaryk Avenue, the city's most exclusive shopping street, as well as world-renowned restaurants and cultural institutions like the Soumaya Museum and Museo Jumex.",
-      "accommodationsHelp5": "Paseo de la Reforma is the most iconic avenue, stretching from the city center to the western neighborhoods. Inspired by the great boulevards of Europe, it’s lined with monuments, skyscrapers, museums, and public art. Key landmarks include the Angel of Independence, Diana the Huntress, and Chapultepec Park.",
+      "accommodationsHelp3": "La Condesa is a vibrant and trendy neighborhood, known for its tree-lined streets, Art Deco architecture, and lively cultural scene. It offers a mix of stylish cafes, restaurants, boutiques and parks like Parque México and Parque España. ",
+      "accommodationsHelp2": "La Roma is one of most iconic and culturally rich neighborhoods, known for its beautiful early 20th-century architecture, art galleries, indie bookstores, and vibrant food scene, it blends historic charm with a modern, bohemian spirit.",
+      "accommodationsHelp5": "Polanco is an upscale and cosmopolitan neighborhood, known for its luxury shopping, fine dining, and elegant residential areas. Often compared to Beverly Hills, it’s home to Presidente Masaryk Avenue, the city's most exclusive shopping street, as well as world-renowned restaurants and cultural institutions like the Soumaya Museum and Museo Jumex.",
+      "accommodationsHelp4": "Paseo de la Reforma is the most iconic avenue, stretching from the city center to the western neighborhoods. Inspired by the great boulevards of Europe, it’s lined with monuments, skyscrapers, museums, and public art. Key landmarks include the Angel of Independence, Diana the Huntress, and Chapultepec Park.",
       "dressCodeSection": {
         "ladies": {
-          "title": "Ladies:",
+          "title": "Ladies",
           "dress": "Formal dress (midi/maxi) or elegant pantsuit",
           "colors": "Solid bright colors (preferred)",
           "noWhite": "Please no white or similar",
           "dressShoes": "Dress shoes"
         },
         "gentlemen": {
-          "title": "Gentlemen:",
+          "title": "Gentlemen",
           "suit": "Suit (tie optional, no tuxedos required)",
           "shirt": "Dress shirt",
           "dressShoes": "Dress shoes"
@@ -125,7 +126,7 @@
         }
       },
       "CommentsSection": {
-        "title": "Any Comments?",
+        "title": "Any Comments? Let us know if you have allergies or if you are a vegetarian.",
         "commentsInput": {
           "label": "Additional Comments",
           "placeholder": "Feel free to add any additional comments that you would like to be considered "
@@ -180,7 +181,7 @@
     "copyright": "© 2024 Tu App. Todos los derechos reservados"
   },
   "CardHero": {
-    "hero": "Please join us in Mexico City for our wedding on <br/> 14th February 2026"
+    "hero": "Please join us in Mexico City for our wedding on <br/> 14 February 2026"
   },
   "AboutUs": {
     "title": "About us",

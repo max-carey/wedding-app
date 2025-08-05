@@ -10,9 +10,10 @@ interface SectionsContentProps {
     subtitle: string;
     title: string;
     description: string;
+    description2: string;
 }
 
-const SectionsContent: React.FC<SectionsContentProps> = ({image, subtitle, title, description}) => {
+const SectionsContent: React.FC<SectionsContentProps> = ({image, subtitle, title, description, description2}) => {
     return (
         <div className="w-full text-center flex-col items-center flex relative">
             <Image
@@ -31,6 +32,9 @@ const SectionsContent: React.FC<SectionsContentProps> = ({image, subtitle, title
             </h2>
             <p className="mt-4" style={marcellus.style}>
                 {description}
+            </p>
+            <p className="mt-4" style={marcellus.style}>
+                {description2}
             </p>
         </div>
     );

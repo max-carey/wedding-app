@@ -159,6 +159,7 @@ export default function Home() {
                         subtitle={t('sections.subtitle')}
                         title={t('sections.title')}
                         description={t('sections.descriptionForm')}
+                        description2={t('sections.descriptionForm2')}
                     />
 
                     <div className="guest-form-content w-full flex-col items-center flex relative mb-10">
