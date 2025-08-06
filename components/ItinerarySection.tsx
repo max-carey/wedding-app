@@ -23,7 +23,7 @@ const timelineEvents: DayEvents[] = [
         date: "Friday, February 13th, 2026",
         events: [
             {
-                time: "6:00 PM",
+                time: "6:00 PM - 9:00 PM",
                 title: "Welcome Cocktail Party",
                 description: "Details to be confirmed",
                 link: "https://share.google/ITCSr8blHVBpTe51f" // change link

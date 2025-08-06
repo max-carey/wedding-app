@@ -23,7 +23,7 @@ const AccommodationsSection = () => {
                         {t('sections.Accommodations')}
                     </h2>
                     <div className="text-content flex flex-col gap-6 max-w-3xl">
-                        <p className="text-lg" style={marcellus.style}>
+                        <p className="text-lg text-justify" style={marcellus.style}>
                             {t('sections.accommodationsText')}
                         </p>
 
