@@ -48,7 +48,7 @@ const AccommodationsSection = () => {
                                 <ul className="space-y-2">
                                     <li>• <a href="https://www.colima71.com/es" target="_blank" rel="noopener noreferrer">Colima 71</a></li>
                                     <li>• <a href="https://casatenue.mx" target="_blank" rel="noopener noreferrer">Casa Tenue</a></li>
-                                    <li>• <a href="https://www.casacibeles.com" target="_blank" rel="noopener noreferrer">Casa Cibeles</a></li>
+                                    <li>• <a href="https://www.casacibeles.com.mx" target="_blank" rel="noopener noreferrer">Casa Cibeles</a></li>
                                     <li>• <a href="https://casaolivamx.com" target="_blank" rel="noopener noreferrer">Casa Oliva</a></li>
                                 </ul>
                             </div>

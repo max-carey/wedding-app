@@ -71,8 +71,8 @@ const Recommendations = () => {
                             <li>• <a href="https://www.instagram.com/ladyboy.mx/" target="_blank" rel="noopener noreferrer">LadyBoy </a></li>
                             <li>• <a href="https://www.instagram.com/elremolkito/" target="_blank" rel="noopener noreferrer">El remolkito</a></li>
                             <li>• <a href="https://www.instagram.com/tacoslosalexis/" target="_blank" rel="noopener noreferrer">Tacos Los Alexis </a></li>
-                            <li>• <a href="https://www.instagram.com/maizajos/" target="_blank" rel="noopener noreferrer">Maizajo</a></li>
-                            <li>• <a href="https://www.instagram.com/la.ochenta.y.nueve/" target="_blank" rel="noopener noreferrer"></a>La Ochenta y nueve </li>
+                            <li>• <a href="https://www.instagram.com/maizajo/" target="_blank" rel="noopener noreferrer">Maizajo</a></li>
+                            <li>• <a href="https://www.instagram.com/la.ochenta.y.nueve/" target="_blank" rel="noopener noreferrer">La Ochenta y nueve</a></li>
                             <li>• <a href="https://www.instagram.com/molinopujol/" target="_blank" rel="noopener noreferrer">Molino Pujol </a></li>
                             <li>• <a href="https://www.instagram.com/exp_maiz/" target="_blank" rel="noopener noreferrer">Expendio de maiz </a></li>
                             <li>• <a href="https://www.instagram.com/micompachava/" target="_blank" rel="noopener noreferrer">Mi compa chava</a></li>
@@ -101,6 +101,7 @@ const Recommendations = () => {
                             <li>• <a href="https://www.instagram.com/salon_palomilla/" target="_blank" rel="noopener noreferrer">Salón Palomilla</a></li>
                             <li>• <a href="https://www.instagram.com/tlecan/" target="_blank" rel="noopener noreferrer">Tlecan </a></li>
                             <li>• <a href="https://www.instagram.com/shhh99r/" target="_blank" rel="noopener noreferrer">Shhh </a></li>
+                            <li>• <a href="https://www.instagram.com/handshake_bar/" target="_blank" rel="noopener noreferrer">Handshake Speakeasy</a></li>
                         </ul>
                     </div>
                 </div>
