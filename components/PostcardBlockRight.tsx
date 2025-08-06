@@ -8,7 +8,7 @@ import {marcellus} from "@/styles/fonts";
 const PostcardBlockRight = () => {
     const t = useTranslations('AboutUs');
     return (
-        <div className="about-us- right md:order-1 derw-full bg-[white] flex-col justify-center items-stretch mb-[-25px] flex mt-[25px] md:pl-[50px] py-[85px]">
+        <div className="about-us- right md:order-1 derw-full bg-[white] flex-col justify-center items-stretch flex md:pl-[50px] py-[85px]">
             <div className="w-full flex-col justify-center items-start flex px-[10%] md:px-[16%]">
                 <Image
                     src={ramal}

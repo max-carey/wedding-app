@@ -31,6 +31,8 @@
       "Wedding": "Wedding Event",
       "Party": "Welcome Cocktail Party",
       "Accommodations": "Accommodations",
+      "Recommendations": "Recommendations",
+      "Gifts": "Gift Guide",
       "DressCode": "Dress Code",
       "dressCodeTitle": "Formal Attire",
       "dressCodeDescription": "Ladies:\nFormal dress (midi/maxi) or elegant pantsuit\nSolid bright colors (preferred)\nPlease no white or similar\nDress shoes\n\nGentleman:\nSuit (tie optional, no tuxedos required)\nDress shirt\nDress shoes",
@@ -63,7 +65,7 @@
         "title": "Recommendations",
         "restaurants": "Restaurants",
         "tacos": "Tacos / Street food",
-        "coffeeShops": "Coffee shops/ Bakeries/ Breakfast",
+        "coffeeShops": "Coffee shops / Bakeries/ Breakfast",
         "galleries": "Galleries / Museums / Libraries /Stores",
         "bars": "Bars"
       }

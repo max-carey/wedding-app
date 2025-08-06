@@ -52,9 +52,9 @@ const Recommendations = () => {
                             <li>• <a href="https://www.instagram.com/panaderiarosetta/" target="_blank" rel="noopener noreferrer">Panadería Rosetta </a></li>
                             <li>• <a href="https://www.instagram.com/greenrhino_mx/" target="_blank" rel="noopener noreferrer">Green Rhino </a></li>
                             <li>• <a href="https://www.instagram.com/kiyo.cafe/" target="_blank" rel="noopener noreferrer">Kiyo Café </a></li>
-                            <li>• <a href="https://www.instagram.com/bunamx/" target="_blank" rel="noopener noreferrer">kiyo.cafe</a></li>
+                            <li>• <a href="https://www.instagram.com/bunamx/" target="_blank" rel="noopener noreferrer">Buna</a></li>
                             <li>• <a href="https://www.instagram.com/cafe.denadie/" target="_blank" rel="noopener noreferrer">Café de nadie </a></li>
-                            <li>• <a href="https://www.instagram.com/mendlmx/" target="_blank" rel="noopener noreferrer">mendlmx</a></li>
+                            <li>• <a href="https://www.instagram.com/mendlmx/" target="_blank" rel="noopener noreferrer">Mendl</a></li>
                             <li>• <a href="https://www.instagram.com/cafe_nin/" target="_blank" rel="noopener noreferrer">Café Nin</a></li>
                             <li>• <a href="https://www.instagram.com/sede.cafe/" target="_blank" rel="noopener noreferrer">Sede Café</a></li>
                             <li>• <a href="https://www.instagram.com/_niddo/" target="_blank" rel="noopener noreferrer">Niddo</a></li>

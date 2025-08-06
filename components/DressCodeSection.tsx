@@ -25,7 +25,7 @@ const DressCodeSection = () => {
                         {t('sections.DressCode')}
                     </h2>
                     <div className="text-content flex flex-col gap-6 max-w-3xl">
-                        <h3 className="text-xl font-semibold text-[#7D9B76]" style={marcellus.style}>
+                        <h3 className="text-2xl font-semibold text-[#7D9B76]" style={marcellus.style}>
                             {t('sections.dressCodeTitle')}
                         </h3>
                         <div className="text-lg text-left grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10" >
