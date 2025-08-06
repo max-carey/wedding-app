@@ -54,7 +54,7 @@ const Recommendations = () => {
                             <li>• <a href="https://www.instagram.com/kiyo.cafe/" target="_blank" rel="noopener noreferrer">Kiyo Café </a></li>
                             <li>• <a href="https://www.instagram.com/bunamx/" target="_blank" rel="noopener noreferrer">Buna</a></li>
                             <li>• <a href="https://www.instagram.com/cafe.denadie/" target="_blank" rel="noopener noreferrer">Café de nadie </a></li>
-                            <li>• <a href="https://www.instagram.com/mendlmx/" target="_blank" rel="noopener noreferrer">Mendl</a></li>
+                            <li>• <a href="https://www.instagram.com/mendlmx/" target="_blank" rel="noopener noreferrer">Mendl </a></li>
                             <li>• <a href="https://www.instagram.com/cafe_nin/" target="_blank" rel="noopener noreferrer">Café Nin</a></li>
                             <li>• <a href="https://www.instagram.com/sede.cafe/" target="_blank" rel="noopener noreferrer">Sede Café</a></li>
                             <li>• <a href="https://www.instagram.com/_niddo/" target="_blank" rel="noopener noreferrer">Niddo</a></li>
@@ -95,7 +95,7 @@ const Recommendations = () => {
                             <li>• <a href="https://www.instagram.com/salonacme/" target="_blank" rel="noopener noreferrer">Salón Acme</a></li>
                         </ul>
                     </div>
-                    <div className="bg-white p-6 rounded-lg shadow-md col-span-2">
+                    <div className="bg-white p-6 rounded-lg shadow-md col-span-1 md:col-span-2">
                         <h3 className="text-xl font-semibold mb-4 text-[#7D9B76]">{t('sections.recommendations.bars')}</h3>
                         <ul className="space-y-2">
                             <li>• <a href="https://www.instagram.com/fiftymils/" target="_blank" rel="noopener noreferrer">Fifty mils</a></li>
