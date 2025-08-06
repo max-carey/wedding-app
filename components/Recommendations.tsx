@@ -48,7 +48,7 @@ const Recommendations = () => {
                         <h3 className="text-xl font-semibold mb-4 text-[#7D9B76]">{t('sections.recommendations.coffeeShops')}</h3>
                         <ul className="space-y-2">
                             <li>• <a href="https://www.instagram.com/arabica.mexico/" target="_blank" rel="noopener noreferrer">% Arabica Café </a></li>
-                            <li>• <a href="https://www.instagram.com/odette______/" target="_blank" rel="noopener noreferrer">Odette</a></li>
+                            <li>• <a href="https://www.instagram.com/odette_________/" target="_blank" rel="noopener noreferrer">Odette</a></li>
                             <li>• <a href="https://www.instagram.com/panaderiarosetta/" target="_blank" rel="noopener noreferrer">Panadería Rosetta </a></li>
                             <li>• <a href="https://www.instagram.com/greenrhino_mx/" target="_blank" rel="noopener noreferrer">Green Rhino </a></li>
                             <li>• <a href="https://www.instagram.com/kiyo.cafe/" target="_blank" rel="noopener noreferrer">Kiyo Café </a></li>
@@ -92,7 +92,6 @@ const Recommendations = () => {
                             <li>• <a href="https://www.instagram.com/museoartemodernomx/" target="_blank" rel="noopener noreferrer">Museo de Arte Moderno</a></li>
                             <li>• <a href="https://www.instagram.com/eneltamayo/" target="_blank" rel="noopener noreferrer">Museo Tamayo</a></li>
                             <li>• <a href="https://www.instagram.com/casacarrington.uam/" target="_blank" rel="noopener noreferrer">Casa Estudio Leonora Carrington</a></li>
-                            <li>• <a href="https://www.instagram.com/salonacme/" target="_blank" rel="noopener noreferrer">Salón Acme</a></li>
                         </ul>
                     </div>
                     <div className="bg-white p-6 rounded-lg shadow-md col-span-1 md:col-span-2">
@@ -102,7 +101,6 @@ const Recommendations = () => {
                             <li>• <a href="https://www.instagram.com/salon_palomilla/" target="_blank" rel="noopener noreferrer">Salón Palomilla</a></li>
                             <li>• <a href="https://www.instagram.com/tlecan/" target="_blank" rel="noopener noreferrer">Tlecan </a></li>
                             <li>• <a href="https://www.instagram.com/shhh99r/" target="_blank" rel="noopener noreferrer">Shhh </a></li>
-                            <li>• <a href="https://www.instagram.com/handshake_bar/" target="_blank" rel="noopener noreferrer">Salón Acme </a></li>
                         </ul>
                     </div>
                 </div>
