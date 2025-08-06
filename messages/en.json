@@ -31,12 +31,13 @@
       "Wedding": "Wedding Event",
       "Party": "Welcome Cocktail Party",
       "Accommodations": "Accommodations",
-      "Recommendations": "Recommendations",
+      "Recommendations": "Recommendations for activities",
       "Gifts": "Gift Guide",
       "DressCode": "Dress Code",
       "dressCodeTitle": "Formal Attire",
       "dressCodeDescription": "Ladies:\nFormal dress (midi/maxi) or elegant pantsuit\nSolid bright colors (preferred)\nPlease no white or similar\nDress shoes\n\nGentleman:\nSuit (tie optional, no tuxedos required)\nDress shirt\nDress shoes",
-      "accommodationsText": "The wedding venue is located in downtown Mexico City (el centro). We recommend staying in Roma, Condesa, Reforma, Polanco or Juarez neighborhoods. Here are some hotel recommendations for each area:",
+      "accommodationsText": "The wedding venue is located in downtown Mexico City (el centro). We recommend staying in Roma, Condesa, Reforma, Polanco or Juarez neighborhoods.",
+      "accommodationsText2": "Here are some hotel recommendations for each area:",
       "accommodationsHelp": "Feel free to reach out to us if you need help with accommodations or have any questions!",
       "accommodationsHelp3": "La Condesa is a vibrant and trendy neighborhood, known for its tree-lined streets, Art Deco architecture, and lively cultural scene. It offers a mix of stylish cafes, restaurants, boutiques and parks like Parque México and Parque España. ",
       "accommodationsHelp2": "La Roma is one of most iconic and culturally rich neighborhoods, known for its beautiful early 20th-century architecture, art galleries, indie bookstores, and vibrant food scene, it blends historic charm with a modern, bohemian spirit.",
@@ -45,24 +46,26 @@
       "dressCodeSection": {
         "ladies": {
           "title": "Ladies",
-          "dress": "Formal dress (midi/maxi) or elegant pantsuit",
+          "dress": "Midi/Maxi dress or elegant pantsuit",
           "colors": "Solid bright colors (preferred)",
           "noWhite": "Please no white or similar",
           "dressShoes": "Dress shoes"
         },
         "gentlemen": {
           "title": "Gentlemen",
-          "suit": "Suit (tie optional, no tuxedos required)",
+          "suit": "Suit (tie optional)",
           "shirt": "Dress shirt",
           "dressShoes": "Dress shoes"
         }
       },
       "giftGuide": {
         "title": "Gift Guide",
-        "description": "With all that we have, we are truly blessed, your presence is that we request, but if you desire to give, nonetheless, monetary gift is the one we suggest."
+        "description": "We realize that it is expensive to travel to Mexico City for our wedding and your presence is a gift.",
+        "description2": "If you would like to contribute to our honeymoon fund, we would be very grateful.",
+        "description3": "Link will be provided."
       },
       "recommendations": {
-        "title": "Recommendations",
+        "title": "Recommendations for activities",
         "restaurants": "Restaurants",
         "tacos": "Tacos / Street food",
         "coffeeShops": "Coffee shops / Bakeries/ Breakfast",

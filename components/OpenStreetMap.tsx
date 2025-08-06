@@ -24,9 +24,11 @@ const OpenStreetMapComponent: React.FC = () => {
           if (mapRef.current && !leafletMapRef.current) {
             leafletMapRef.current = L.map(mapRef.current).setView(position, 15);
 
-            L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-              maxZoom: 19
+            // Cambio a OpenStreetMap directo para evitar errores 400
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+              maxZoom: 19,
+              subdomains: 'abc'
             }).addTo(leafletMapRef.current);
 
             const marker = L.marker(position).addTo(leafletMapRef.current);

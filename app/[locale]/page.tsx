@@ -105,7 +105,6 @@ export default function Home() {
                             {t('sections.locationsText')}
                         </h2>
                         <br></br>
-                        <h2 className="font-tanpearl">{t('sections.locations1')}</h2>
                         <MapTabs/>
                     </div>
                 </div>
@@ -165,9 +164,12 @@ export default function Home() {
                         description2={t('sections.descriptionForm2')}
                     />
 
-                    <div className="guest-form-content w-full flex-col items-center flex relative mb-10">
-                        <GuestFormFormikEs/>
-                    </div>
+                    {/*
+                        *Please note when you want to activate the RSVP
+                        <div className="guest-form-content w-full flex-col items-center flex relative mb-10">
+                            <GuestFormFormikEs/>
+                        </div>
+                    */}
                 </div>
             </section>
         </>

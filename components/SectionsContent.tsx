@@ -23,19 +23,21 @@ const SectionsContent: React.FC<SectionsContentProps> = ({image, subtitle, title
                 className="h-auto object-contain mb-[14px]"
             />
 
-            <span className="uppercase mb-4" style={marcellus.style}>
-                {subtitle}
-            </span>
+            
             <h2
-                className="font-tanpearl text-3xl font-bold">
+                className="font-tanpearl text-3xl font-bold mt-8">
                 {title}
             </h2>
-            <p className="mt-4" style={marcellus.style}>
-                {description}
-            </p>
-            <p className="mt-4" style={marcellus.style}>
-                {description2}
-            </p>
+            {/*
+                *Please note when you want to activate the RSVP
+                
+                <p className="mt-4" style={marcellus.style}>
+                    {description}
+                </p>
+                <p className="mt-4" style={marcellus.style}>
+                    {description2}
+                </p>
+            */}
         </div>
     );
 };

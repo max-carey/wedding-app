@@ -26,13 +26,15 @@ const OpenStreetMapFridayComponent: React.FC = () => {
             leafletInstance = L.map(mapRef.current).setView(position, 15);
             leafletMapRef.current = leafletInstance;
 
-            L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
-              attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
-              maxZoom: 19
+            // Cambio a OpenStreetMap directo para evitar errores 400
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+              maxZoom: 19,
+              subdomains: 'abc'
             }).addTo(leafletInstance);
 
             const marker = L.marker(position).addTo(leafletInstance);
-            marker.bindPopup('Calle Gral. Prim 32, Juárez, Cuauhtémoc, 06600 Ciudad de México, CDMX', {
+            marker.bindPopup('Details to be confirmed', {
               className: 'custom-popup'
             }).openPopup();
           }

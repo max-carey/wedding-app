@@ -29,7 +29,7 @@
       "Accommodations": "Alojamiento",
       "DressCode": "Código de Vestimenta",
       "dressCodeTitle": "Etiqueta Formal",
-      "Recommendations": "Recomendaciones",
+      "Recommendations": "Recomendaciones para actividades",
       "Gifts": "Guía de Regalos",
       "dressCodeDescription": "Damas:\nVestido formal (midi/maxi) o traje elegante\nColores sólidos brillantes (preferentemente)\nPor favor no usar blanco o colores similares\nZapatos de vestir\n\nCaballeros:\nTraje (corbata opcional, no se requiere smoking)\nCamisa de vestir\nZapatos de vestir",
       "accommodationsText": "El lugar de la boda está ubicado en el centro de la Ciudad de México (el centro). Recomendamos hospedarse en los barrios de Roma, Condesa, Reforma, Polanco o Juárez. Aquí hay algunas recomendaciones de hoteles para cada área:",
@@ -41,24 +41,26 @@
       "dressCodeSection": {
         "ladies": {
           "title": "Damas",
-          "dress": "Vestido formal (midi/maxi) o traje elegante",
+          "dress": "Vestido Midi/Maxi o traje elegante",
           "colors": "Colores sólidos brillantes (preferentemente)",
           "noWhite": "Por favor no usar blanco o colores similares",
           "dressShoes": "Zapatos de vestir"
         },
         "gentlemen": {
           "title": "Caballeros",
-          "suit": "Traje (corbata opcional, no se requiere smoking)",
+          "suit": "Traje (corbata opcional)",
           "shirt": "Camisa de vestir",
           "dressShoes": "Zapatos de vestir"
         }
       },
       "giftGuide": {
         "title": "Guía de Regalos",
-        "description": "Con todo lo que tenemos, estamos realmente bendecidos, tu presencia es lo que solicitamos, pero si deseas regalar, sin embargo, el regalo monetario es el que sugerimos."
+        "description": "Reconocemos que es costoso viajar a la Ciudad de México para nuestra boda y tu presencia es un regalo.",
+        "description2": "Si deseas contribuir al fondo de nuestra luna de miel, seríamos muy agradecidos.",
+        "description3": "El link será proporcionado."
       },
       "recommendations": {
-        "title": "Recomendaciones",
+        "title": "Recomendaciones para actividades",
         "restaurants": "Restaurantes",
         "tacos": "Tacos / Comida de la calle",
         "coffeeShops": "Cafeterías / Panaderías / Desayunos",

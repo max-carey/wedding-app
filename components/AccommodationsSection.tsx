@@ -23,8 +23,24 @@ const AccommodationsSection = () => {
                         {t('sections.Accommodations')}
                     </h2>
                     <div className="text-content flex flex-col gap-6 max-w-3xl">
-                        <p className="text-lg mb-4" style={marcellus.style}>
+                        <p className="text-lg" style={marcellus.style}>
                             {t('sections.accommodationsText')}
+                        </p>
+
+                        <p className="mt-4 text-lg text-justify" style={marcellus.style}>
+                            {t('sections.accommodationsHelp2')}
+                        </p>
+                        <p className="mt-4 text-lg text-justify" style={marcellus.style}>
+                            {t('sections.accommodationsHelp3')}
+                        </p>
+                        <p className="mt-4 text-lg text-justify" style={marcellus.style}>
+                            {t('sections.accommodationsHelp4')}
+                        </p>
+                        <p className="mt-4 text-lg text-justify" style={marcellus.style}>
+                            {t('sections.accommodationsHelp5')}
+                        </p>
+                        <p className="mt-4 text-lg text-justify" style={marcellus.style}>
+                            {t('sections.accommodationsText2')}
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
                             <div className="bg-white p-6 rounded-lg shadow-md">
@@ -66,19 +82,6 @@ const AccommodationsSection = () => {
                         </div>
                         <p className="mt-8 text-lg italic">
                             {t('sections.accommodationsHelp')}
-                        </p>
-
-                        <p className="mt-8 text-lg text-justify">
-                            {t('sections.accommodationsHelp2')}
-                        </p>
-                        <p className="mt-8 text-lg text-justify">
-                            {t('sections.accommodationsHelp3')}
-                        </p>
-                        <p className="mt-8 text-lg text-justify">
-                            {t('sections.accommodationsHelp4')}
-                        </p>
-                        <p className="mt-8 text-lg text-justify">
-                            {t('sections.accommodationsHelp5')}
                         </p>
                     </div>
                 </div>

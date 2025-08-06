@@ -23,7 +23,7 @@ const timelineEvents: DayEvents[] = [
         date: "Friday, February 13th, 2026",
         events: [
             {
-                time: "6:00 PM - 9:00 PM",
+                time: "6:00 PM",
                 title: "Welcome Cocktail Party",
                 description: "Details to be confirmed",
                 link: "https://share.google/ITCSr8blHVBpTe51f" // change link
@@ -34,33 +34,33 @@ const timelineEvents: DayEvents[] = [
         date: "Saturday, February 14th, 2026",
         events: [
             {
-                time: "4:00 PM - 5:00 PM",
+                time: "4:00 PM",
                 title: "Ceremony",
                 description: "Wedding ceremony at the main venue",
                 link: "https://share.google/ITCSr8blHVBpTe51f"
             },
             {
-                time: "5:00 PM - 6:00 PM",
+                time: "5:00 PM",
                 title: "Cocktail Hour",
                 description: "Drinks and light appetizers",
             },
             {
-                time: "6:00 PM - 8:00 PM",
+                time: "6:00 PM",
                 title: "Dinner and Live Music",
                 description: "Delicious Mexican food"
             },
             {
-                time: "8:00 PM - 12:00 AM",
+                time: "8:00 PM",
                 title: "Dancing",
                 description: "Dance the night away"
             },
             {
-                time: "12:00 AM - 1:00 AM",
+                time: "12:00 AM",
                 title: "Midnight Munchies",
                 description: "Late night food"
             },
             {
-                time: "1:00 AM - 2:00 AM",
+                time: "1:00 AM",
                 title: "After Party",
                 description: "After party onsite"
             }

@@ -23,6 +23,12 @@ const GiftGuide = () => {
                 <p className="text-lg text-center">
                     {t('sections.giftGuide.description')}
                 </p>
+                <p className="text-lg text-center">
+                    {t('sections.giftGuide.description2')}
+                </p>
+                <p className="text-lg text-center">
+                    {t('sections.giftGuide.description3')}
+                </p>
             </div>
         </section>
     )
