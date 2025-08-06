@@ -54,6 +54,14 @@
       "giftGuide": {
         "title": "Guía de Regalos",
         "description": "Con todo lo que tenemos, estamos realmente bendecidos, tu presencia es lo que solicitamos, pero si deseas regalar, sin embargo, el regalo monetario es el que sugerimos."
+      },
+      "recommendations": {
+        "title": "Recomendaciones",
+        "restaurants": "Restaurantes",
+        "tacos": "Tacos / Comida de la calle",
+        "coffeeShops": "Cafeterías / Panaderías / Desayunos",
+        "galleries": "Galerías / Museos / Bibliotecas / Tiendas",
+        "bars": "Bares"
       }
     },
     "form": {

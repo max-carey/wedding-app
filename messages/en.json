@@ -58,6 +58,14 @@
       "giftGuide": {
         "title": "Gift Guide",
         "description": "With all that we have, we are truly blessed, your presence is that we request, but if you desire to give, nonetheless, monetary gift is the one we suggest."
+      },
+      "recommendations": {
+        "title": "Recommendations",
+        "restaurants": "Restaurants",
+        "tacos": "Tacos / Street food",
+        "coffeeShops": "Coffee shops/ Bakeries/ Breakfast",
+        "galleries": "Galleries / Museums / Libraries /Stores",
+        "bars": "Bars"
       }
     },
     "form": {

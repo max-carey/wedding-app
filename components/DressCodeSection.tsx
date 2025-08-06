@@ -32,7 +32,9 @@ const DressCodeSection = () => {
                             <div className='flex flex-col items-center'>
                                 <ul>
                                     <li className='mb-4 font-bold text-center'>
-                                        {t('sections.dressCodeSection.ladies.title')}
+                                        <a href="https://pin.it/3Gz0YdSlj" target="_blank" rel="noopener noreferrer">
+                                            {t('sections.dressCodeSection.ladies.title')}
+                                        </a>
                                     </li>
                                     <li className='mb-3 text-center'>
                                         {t('sections.dressCodeSection.ladies.dress')}
@@ -51,7 +53,9 @@ const DressCodeSection = () => {
                             <div>
                                 <ul>
                                     <li className='mb-4 font-bold text-center'>
-                                        {t('sections.dressCodeSection.gentlemen.title')}
+                                        <a href="https://pin.it/5SNzYMvkb" target="_blank" rel="noopener noreferrer">
+                                            {t('sections.dressCodeSection.gentlemen.title')}
+                                        </a>
                                     </li>
                                     <li className='mb-3 text-center'>
                                     {t('sections.dressCodeSection.gentlemen.suit')}

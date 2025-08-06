@@ -18,6 +18,7 @@ import ItinerarySection from "@/components/ItinerarySection";
 import AccommodationsSection from "@/components/AccommodationsSection";
 import DressCodeSection from "@/components/DressCodeSection";
 import GiftGuide from "@/components/GiftGuide";
+import Recommendations from "@/components/Recommendations";
 
 export default function Home() {
     const t = useTranslations('IndexPage');
@@ -148,6 +149,8 @@ export default function Home() {
             </section>
 
             <AccommodationsSection />
+
+            <Recommendations />
 
             <DressCodeSection />
 
