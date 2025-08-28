@@ -1,10 +1,12 @@
 'use client';
 import React, { useEffect, useRef } from 'react';
+import { useTranslations } from 'next-intl';
 import 'leaflet/dist/leaflet.css';
 
 const position: [number, number] = [19.429894360240656, -99.15299641373737];
 
 const OpenStreetMapFridayComponent: React.FC = () => {
+  const t = useTranslations('IndexPage');
   const mapRef = useRef<HTMLDivElement>(null);
   const leafletMapRef = useRef<any>(null);
 
@@ -34,7 +36,7 @@ const OpenStreetMapFridayComponent: React.FC = () => {
             }).addTo(leafletInstance);
 
             const marker = L.marker(position).addTo(leafletInstance);
-            marker.bindPopup('Details to be confirmed', {
+            marker.bindPopup(t('sections.itinerary.welcomeParty.description'), {
               className: 'custom-popup'
             }).openPopup();
           }
