@@ -25,37 +25,37 @@
         "friday": "Viernes, 13 de febrero, 2026",
         "saturday": "Sábado, 14 de febrero, 2026",
         "welcomeParty": {
-          "time": "6-9 pm",
+          "time": "6:00-9:00 pm",
           "title": "Cocktail de bienvenida",
           "description": "Detalles por confirmar"
         },
         "ceremony": {
-          "time": "4-5 pm",
+          "time": "4:00 pm",
           "title": "Ceremonia",
           "description": "Ceremonia en el lugar del evento"
         },
         "cocktails": {
-          "time": "5-6 pm",
+          "time": "5:00 pm",
           "title": "Hora de cócteles",
           "description": "Bebidas y aperitivos"
         },
         "dinner": {
-          "time": "6-8 pm",
+          "time": "6:00 pm",
           "title": "Cena y música en vivo",
           "description": "Deliciosa comida mexicana"
         },
         "dancing": {
-          "time": "8-12 pm",
+          "time": "8:00 pm",
           "title": "Baile",
           "description": "Baile toda la noche"
         },
         "midnight": {
-          "time": "12-1 am",
+          "time": "12:00 am",
           "title": "Bocadillos de media noche",
           "description": ""
         },
         "afterparty": {
-          "time": "1 am",
+          "time": "1:00 am",
           "title": "After party",
           "description": "After party en el sitio"
         }
