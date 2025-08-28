@@ -25,6 +25,45 @@
       "Greeting": "Greeting",
       "AboutUs": "About Us",
       "Itinerary": "Schedule",
+      "itinerary": {
+        "friday": "Friday, February 13th, 2026",
+        "saturday": "Saturday, February 14th, 2026",
+        "welcomeParty": {
+          "time": "6:00 PM - 9:00 PM",
+          "title": "Welcome Cocktail Party",
+          "description": "Details to be confirmed"
+        },
+        "ceremony": {
+          "time": "4:00 PM",
+          "title": "Ceremony",
+          "description": "Wedding ceremony at the main venue"
+        },
+        "cocktails": {
+          "time": "5:00 PM",
+          "title": "Cocktail Hour",
+          "description": "Drinks and light appetizers"
+        },
+        "dinner": {
+          "time": "6:00 PM",
+          "title": "Dinner and Live Music",
+          "description": "Delicious Mexican food"
+        },
+        "dancing": {
+          "time": "8:00 PM",
+          "title": "Dancing",
+          "description": "Dance the night away"
+        },
+        "midnight": {
+          "time": "12:00 AM",
+          "title": "Midnight Munchies",
+          "description": "Late night food"
+        },
+        "afterparty": {
+          "time": "1:00 AM",
+          "title": "After Party",
+          "description": "After party onsite"
+        }
+      },
       "Gallery": "Gallery",
       "Locations": "Locations",
       "RSVP": "RSVP",

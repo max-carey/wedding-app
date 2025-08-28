@@ -16,11 +16,50 @@
       "subtitle": "Confirma tu asistencia",
       "title": "ESPERAMOS VERTE ALLI",
       "descriptionForm": "Llena el formulario a continuación para confirmar tu asistencia a la boda.",
-      "descriptionForm2": "Debido a restricciones de espacio y capacidad, solo podemos acomodar a los invitados nombrados en tu invitación.",
+      "descriptionForm2": "Debido al espacio y a las restricciones de capacidad del lugar de la boda, sólo podemos acomodar a los invitados nombrados en la invitación.",
       "Home": "Inicio",
       "Greeting": "Saludo",
       "AboutUs": "Sobre Nosotros",
       "Itinerary": "Itinerario",
+      "itinerary": {
+        "friday": "Viernes, 13 de febrero, 2026",
+        "saturday": "Sábado, 14 de febrero, 2026",
+        "welcomeParty": {
+          "time": "6-9 pm",
+          "title": "Cocktail de bienvenida",
+          "description": "Detalles por confirmar"
+        },
+        "ceremony": {
+          "time": "4-5 pm",
+          "title": "Ceremonia",
+          "description": "Ceremonia en el lugar del evento"
+        },
+        "cocktails": {
+          "time": "5-6 pm",
+          "title": "Hora de cocktails",
+          "description": "Bebidas y aperitivos"
+        },
+        "dinner": {
+          "time": "6-8 pm",
+          "title": "Cena y música en vivo",
+          "description": "Deliciosa comida mexicana"
+        },
+        "dancing": {
+          "time": "8-12 pm",
+          "title": "Baile",
+          "description": "Baile toda la noche"
+        },
+        "midnight": {
+          "time": "12-1 am",
+          "title": "Bocadillos de media noche",
+          "description": ""
+        },
+        "afterparty": {
+          "time": "1 am",
+          "title": "After party",
+          "description": "After party en el sitio"
+        }
+      },
       "Gallery": "Galería",
       "Locations": "Ubicaciones",
       "RSVP": "RSVP",
@@ -32,12 +71,13 @@
       "Recommendations": "Recomendaciones para actividades",
       "Gifts": "Guía de Regalos",
       "dressCodeDescription": "Damas:\nVestido formal (midi/maxi) o traje elegante\nColores sólidos brillantes (preferentemente)\nPor favor no usar blanco o colores similares\nZapatos de vestir\n\nCaballeros:\nTraje (corbata opcional, no se requiere smoking)\nCamisa de vestir\nZapatos de vestir",
-      "accommodationsText": "El lugar de la boda está ubicado en el centro de la Ciudad de México (el centro). Recomendamos hospedarse en los barrios de Roma, Condesa, Reforma, Polanco o Juárez. Aquí hay algunas recomendaciones de hoteles para cada área:",
+      "accommodationsText": "El lugar de la boda está ubicado en el centro de la Ciudad de México. Recomendamos hospedarse en las colonias Roma, Condesa, Reforma, Polanco o Juárez.",
+      "accommodationsText2": "Aquí hay algunas recomendaciones de hospedaje para cada área:",
       "accommodationsHelp": "¡No dudes en contactarnos si necesitas ayuda con el alojamiento o tienes alguna pregunta!",
-      "accommodationsHelp3": "La Condesa es un barrio vibrante y moderno, conocido por sus calles con árboles, arquitectura Art Deco y su vibrante escena cultural. Ofrece una mezcla de cafés, restaurantes, boutiques y parques como Parque México y Parque España.",
-      "accommodationsHelp2": "La Roma es uno de los barrios más icónicos y culturalmente rico, conocido por su hermosa arquitectura de principios del siglo XX, galerías de arte, librerías indie y su vibrante escena gastronómica, que combina el encanto histórico con un espíritu moderno y bohemio.",
-      "accommodationsHelp5": "Polanco es un barrio cosmopolita y de lujo, conocido por su shopping de lujo, restaurantes de alta gama y áreas residenciales elegantes. A menudo comparado con Beverly Hills, es hogar del Avenida Presidente Masaryk, la calle de compras más exclusiva de la ciudad, así como restaurantes y instituciones culturales como el Museo Soumaya y el Museo Jumex.",
-      "accommodationsHelp4": "Paseo de la Reforma es la avenida más icónica, que se extiende desde el centro de la ciudad hasta las zonas occidentales. Inspirada en las grandes avenidas europeas, está llena de monumentos, rascacielos, museos y arte público. Los principales landmarks incluyen el Ángel de la Independencia, Diana la Cazadora y el Parque Chapultepec.",
+      "accommodationsHelp3": "La Condesa es un barrio vibrante y moderno, conocido por sus calles arboladas, su arquitectura Art Deco y su vibrante escena cultural. Ofrece una mezcla de cafés, restaurantes, boutiques y parques como Parque México y Parque España.",
+      "accommodationsHelp2": "La Roma es uno de los barrios icónicos y más rico culturalmente; conocido por su hermosa arquitectura de principios del Siglo XX, galerías de arte, librerías independientes y su vibrante escena gastronómica que combina el encanto histórico con un espíritu moderno y bohemio.",
+      "accommodationsHelp5": "Polanco es una colonia cosmopolita, conocido por su shopping de lujo, restaurantes de alta gama y áreas residenciales elegantes. A menudo comparado con Beverly Hills, es hogar de la Avenida Presidente Masaryk, la calle de compras más exclusiva de la ciudad, así como de restaurantes e instituciones culturales como el Museo Soumaya y el Museo Jumex.",
+      "accommodationsHelp4": "Paseo de la Reforma es la avenida más emblemática, se extiende desde el centro de la ciudad hasta las zonas occidentales. Inspirada en las grandes avenidas europeas, está llena de monumentos, rascacielos, museos y arte público. Las principales atracciones son el Ángel de la Independencia, la Diana Cazadora y el Parque Chapultepec.",
       "dressCodeSection": {
         "ladies": {
           "title": "Damas",
@@ -55,16 +95,16 @@
       },
       "giftGuide": {
         "title": "Guía de Regalos",
-        "description": "Reconocemos que es costoso viajar a la Ciudad de México para nuestra boda y tu presencia es un regalo.",
-        "description2": "Si deseas contribuir al fondo de nuestra luna de miel, seríamos muy agradecidos.",
-        "description3": "El link será proporcionado."
+        "description": "Sabemos que es costoso viajar a la Ciudad de México para asistir a nuestra boda y tu presencia es un regalo.",
+        "description2": "Si deseas contribuir al fondo de nuestra luna de miel, estaremos muy agradecidos.",
+        "description3": "El link será proporcionado después."
       },
       "recommendations": {
         "title": "Recomendaciones para actividades",
         "restaurants": "Restaurantes",
-        "tacos": "Tacos / Comida de la calle",
+        "tacos": "Taquerías/Comida callejera",
         "coffeeShops": "Cafeterías / Panaderías / Desayunos",
-        "galleries": "Galerías / Museos / Bibliotecas / Tiendas",
+        "galleries": "Galerías/Museos/Librerías/Tiendas",
         "bars": "Bares"
       }
     },
@@ -189,7 +229,7 @@
     "copyright": "© 2024 Your App. All rights reserved."
   },
   "CardHero": {
-    "hero": "Acompáñanos en nuestra boda el 14 de febrero del 2026 en la Ciudad de México"
+    "hero": "Acompáñanos en nuestra boda en la Ciudad de México el 14 de febrero del 2026"
   },
   "Gretting": {
     "Gretting": "Please confirm attendance"
@@ -198,10 +238,10 @@
     "title": "Sobre Nosotros",
     "sectionTitle": "Sobre Nosotros", 
     "description-one": "Nuestra historia comenzó en 2022 como un desliz, literalmente. Nos conocimos a través de Bumble y tuvimos nuestra primera cita en el corazón de Coyoacán, en la Ciudad de México. Nuestros caminos se cruzaron inesperadamente… y hemos sido inseparables desde entonces.",
-    "description-two": "Después de tres años juntos—llenos de aventuras, risas, crecimiento y amor— y durante un mágico viaje a Japón en Abril de 2025, Max se propusó en la pacífica ciudad de Beppu. Éramos sólo nosotros dos y un perfecto “sí”.",
+    "description-two": "Después de tres años juntos—llenos de aventuras, risas, crecimiento y amor— y durante un mágico viaje a Japón en abril de 2025, Max me propuso matrimonio en la pacífica ciudad de Beppu. Éramos sólo nosotros dos y un perfecto \"sí\".",
     "description-three": "Esta página es para compartir todos los detalles sobre nuestro gran día.",
     "description-four": "Estamos muy agradecidos por el amor y el apoyo que hemos recibido por parte de nuestros amigos y familia. Esta boda no es sólo sobre nosotros, sino sobre todas las personas que han sido parte de nuestro camino.",
-    "description-five": "¡No podemos esperar a celebrar con ustedes!"
+    "description-five": "¡Ya queremos celebrar con ustedes!"
   },
   "Countdown": {
   "days": "DÍA(S)",

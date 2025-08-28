@@ -18,58 +18,58 @@ interface DayEvents {
     events: TimelineEvent[];
 }
 
-const timelineEvents: DayEvents[] = [
-    {
-        date: "Friday, February 13th, 2026",
-        events: [
-            {
-                time: "6:00 PM - 9:00 PM",
-                title: "Welcome Cocktail Party",
-                description: "Details to be confirmed",
-                link: "https://share.google/ITCSr8blHVBpTe51f" // change link
-            }
-        ]
-    },
-    {
-        date: "Saturday, February 14th, 2026",
-        events: [
-            {
-                time: "4:00 PM",
-                title: "Ceremony",
-                description: "Wedding ceremony at the main venue",
-                link: "https://share.google/ITCSr8blHVBpTe51f"
-            },
-            {
-                time: "5:00 PM",
-                title: "Cocktail Hour",
-                description: "Drinks and light appetizers",
-            },
-            {
-                time: "6:00 PM",
-                title: "Dinner and Live Music",
-                description: "Delicious Mexican food"
-            },
-            {
-                time: "8:00 PM",
-                title: "Dancing",
-                description: "Dance the night away"
-            },
-            {
-                time: "12:00 AM",
-                title: "Midnight Munchies",
-                description: "Late night food"
-            },
-            {
-                time: "1:00 AM",
-                title: "After Party",
-                description: "After party onsite"
-            }
-        ]
-    }
-];
-
 export default function ItinerarySection() {
     const t = useTranslations('IndexPage');
+    
+    const timelineEvents: DayEvents[] = [
+        {
+            date: t('sections.itinerary.friday'),
+            events: [
+                {
+                    time: t('sections.itinerary.welcomeParty.time'),
+                    title: t('sections.itinerary.welcomeParty.title'),
+                    description: t('sections.itinerary.welcomeParty.description'),
+                    link: "https://share.google/ITCSr8blHVBpTe51f"
+                }
+            ]
+        },
+        {
+            date: t('sections.itinerary.saturday'),
+            events: [
+                {
+                    time: t('sections.itinerary.ceremony.time'),
+                    title: t('sections.itinerary.ceremony.title'),
+                    description: t('sections.itinerary.ceremony.description'),
+                    link: "https://share.google/ITCSr8blHVBpTe51f"
+                },
+                {
+                    time: t('sections.itinerary.cocktails.time'),
+                    title: t('sections.itinerary.cocktails.title'),
+                    description: t('sections.itinerary.cocktails.description'),
+                },
+                {
+                    time: t('sections.itinerary.dinner.time'),
+                    title: t('sections.itinerary.dinner.title'),
+                    description: t('sections.itinerary.dinner.description')
+                },
+                {
+                    time: t('sections.itinerary.dancing.time'),
+                    title: t('sections.itinerary.dancing.title'),
+                    description: t('sections.itinerary.dancing.description')
+                },
+                {
+                    time: t('sections.itinerary.midnight.time'),
+                    title: t('sections.itinerary.midnight.title'),
+                    description: t('sections.itinerary.midnight.description')
+                },
+                {
+                    time: t('sections.itinerary.afterparty.time'),
+                    title: t('sections.itinerary.afterparty.title'),
+                    description: t('sections.itinerary.afterparty.description')
+                }
+            ]
+        }
+    ];
     
     return (
         <section id="itinerary" className="container flex flex-col justify-center items-center py-20 px-5">
