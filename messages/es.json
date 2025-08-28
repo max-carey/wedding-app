@@ -36,7 +36,7 @@
         },
         "cocktails": {
           "time": "5-6 pm",
-          "title": "Hora de cocktails",
+          "title": "Hora de cócteles",
           "description": "Bebidas y aperitivos"
         },
         "dinner": {
@@ -63,8 +63,8 @@
       "Gallery": "Galería",
       "Locations": "Ubicaciones",
       "RSVP": "RSVP",
-      "Wedding": "Boda",
-      "Party": "Fiesta",
+      "Wedding": "Venue de",
+      "Party": "Cóctel de Bienvenida",
       "Accommodations": "Alojamiento",
       "DressCode": "Código de Vestimenta",
       "dressCodeTitle": "Etiqueta Formal",
